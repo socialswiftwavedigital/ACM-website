@@ -77,15 +77,14 @@ require_once __DIR__ . '/includes/header.php';
         </div>
         <div class="product-body">
           <div class="product-cat"><?= htmlspecialchars($p['category']) ?></div>
-          <div class="product-name"><?= htmlspecialchars($p['name']) ?></div>
-          <div class="product-price">Rs. <?= number_format($p['price']) ?> <span>/ piece</span></div>
+          <div class="product-name"><?= htmlspecialchars(preg_replace('/^ACM\s+/i', '', $p['name'])) ?></div>
+          <div class="product-moq">
+            <span class="moq-badge">Min. Order: 100 pcs</span>
+            <span class="moq-bulk">Bulk Available</span>
+          </div>
           <div class="product-footer">
-            <span class="product-stock <?= $p['stock'] > 0 ? 'stock-in' : 'stock-out' ?>">
-              <?= $p['stock'] > 0 ? '✓ In Stock' : '✗ Out of Stock' ?>
-            </span>
-            <?php if ($p['stock'] > 0): ?>
-            <button class="product-order-btn" onclick="event.stopPropagation();window.location='/order?product=<?= $p['id'] ?>'">Order</button>
-            <?php endif; ?>
+            <span class="product-stock stock-in">✓ Available</span>
+            <button class="product-order-btn" onclick="event.stopPropagation();window.location='/product?id=<?= $p['id'] ?>'">Enquire</button>
           </div>
         </div>
       </div>
@@ -100,7 +99,7 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container">
     <h2 style="color:#fff;font-size:26px;font-weight:800;margin-bottom:12px">Need help choosing?</h2>
     <p style="color:rgba(255,255,255,.6);margin-bottom:24px">Chat with us on WhatsApp — we'll help you pick the right product for your skin.</p>
-    <a href="https://wa.me/923000000000" class="btn btn-whatsapp btn-lg" target="_blank">💬 Ask on WhatsApp</a>
+    <a href="https://wa.me/923255129241" class="btn btn-whatsapp btn-lg" target="_blank">💬 Ask on WhatsApp</a>
   </div>
 </section>
 

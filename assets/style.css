@@ -1,4 +1,4 @@
-/* ACM Asia Cosmetics — v4 */
+/* ACM Asia Cosmetics — v5 */
 :root {
   --navy:   #0B1527;
   --navy2:  #0D1E3A;
@@ -168,8 +168,45 @@ img { max-width: 100%; display: block; }
 .product-body { padding: 16px; }
 .product-cat { font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: var(--red); text-transform: uppercase; margin-bottom: 4px; }
 .product-name { font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
-.product-price { font-size: 18px; font-weight: 800; color: var(--navy); font-family: 'Poppins', sans-serif; }
-.product-price span { font-size: 12px; font-weight: 500; color: var(--muted); }
+/* MOQ — product card */
+.product-moq { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.moq-badge { font-size: 11px; font-weight: 700; letter-spacing: .8px; color: var(--navy); background: #EEF2FB; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; }
+.moq-bulk { font-size: 11px; font-weight: 700; letter-spacing: .8px; color: #16A34A; background: #DCFCE7; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; }
+
+/* MOQ — product detail page */
+.moq-info-box { background: #F8FAFD; border: 1.5px solid #E8ECF5; border-radius: 10px; padding: 16px 20px; margin-bottom: 20px; display: flex; flex-direction: column; gap: 10px; }
+.moq-info-row { display: flex; align-items: center; justify-content: space-between; }
+.moq-label { font-size: 12px; font-weight: 700; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; }
+.moq-value { font-size: 14px; font-weight: 700; color: var(--navy); }
+
+/* MOQ quantity selector */
+.moq-selector-wrap { margin-top: 20px; }
+.moq-options { display: flex; flex-wrap: wrap; gap: 10px; }
+.moq-option { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 80px; padding: 12px 8px; border: 2px solid #E8ECF5; border-radius: 10px; cursor: pointer; transition: all .2s; background: #fff; }
+.moq-option input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
+.moq-option:hover { border-color: var(--navy); }
+.moq-option.selected { border-color: var(--navy); background: var(--navy); }
+.moq-qty-num { font-size: 20px; font-weight: 800; color: var(--navy); line-height: 1; transition: color .2s; }
+.moq-qty-label { font-size: 10px; font-weight: 600; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; transition: color .2s; }
+.moq-option.selected .moq-qty-num { color: #fff; }
+.moq-option.selected .moq-qty-label { color: rgba(255,255,255,.7); }
+.moq-discount-tag { font-size: 9px; font-weight: 700; background: #DCFCE7; color: #16A34A; padding: 2px 6px; border-radius: 10px; letter-spacing: .5px; margin-top: 2px; }
+.moq-option.selected .moq-discount-tag { background: rgba(255,255,255,.2); color: #fff; }
+
+/* product detail page */
+.product-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.product-detail-img { aspect-ratio: 1; background: var(--navy2); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 80px; overflow: hidden; }
+.product-detail-img img { width: 100%; height: 100%; object-fit: cover; }
+.product-detail-cat { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--red); text-transform: uppercase; margin-bottom: 8px; }
+.product-detail-name { font-size: 32px; font-weight: 800; color: var(--navy); line-height: 1.2; margin-bottom: 20px; }
+.product-detail-desc { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 24px; }
+@media (max-width: 768px) {
+  .product-detail-grid { grid-template-columns: 1fr; gap: 32px; }
+  .product-detail-name { font-size: 24px; }
+  .moq-options { gap: 8px; }
+  .moq-option { width: 68px; padding: 10px 6px; }
+  .moq-qty-num { font-size: 16px; }
+}
 .product-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; padding-top: 12px; border-top: 1px solid #EEF2FB; }
 .stock-in { font-size: 12px; color: #16A34A; font-weight: 600; }
 .stock-out { font-size: 12px; color: var(--muted); font-weight: 600; }
