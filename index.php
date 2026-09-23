@@ -102,7 +102,11 @@ require_once __DIR__ . '/includes/header.php';
       <?php foreach ($featured as $p): ?>
       <div class="product-card" onclick="window.location='/product?id=<?= $p['id'] ?>'">
         <div class="product-img">
+          <?php if (!empty($p['image'])): ?>
+          <img src="/images/<?= htmlspecialchars($p['image']) ?>" alt="<?= htmlspecialchars($p['name']) ?>">
+          <?php else: ?>
           <div class="product-img-placeholder">🧴</div>
+          <?php endif; ?>
           <?php if ($p['stock'] <= $p['low_stock_threshold']): ?>
           <div class="product-badge">Low Stock</div>
           <?php endif; ?>
