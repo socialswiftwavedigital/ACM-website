@@ -84,7 +84,7 @@ require_once __DIR__ . '/includes/header.php';
           </div>
           <div class="product-footer">
             <span class="product-stock stock-in">✓ Available</span>
-            <button class="product-order-btn" onclick="event.stopPropagation();window.location='/product?id=<?= $p['id'] ?>'">Enquire</button>
+            <button class="product-order-btn" onclick="event.stopPropagation();window.location='/product?id=<?= $p['id'] ?>'">Get A Quote</button>
           </div>
         </div>
       </div>
