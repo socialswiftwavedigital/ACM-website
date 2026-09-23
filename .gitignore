@@ -1,0 +1,19 @@
+# Credentials — never commit
+config.php
+
+# Nested folders (not part of this project)
+acm-website/
+New folder/
+New folder (2)/
+New folder (3)/
+ACM Images Website/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.log
+
+# Loose files not needed in deployment
+*.zip
+1 (3).png
+2 (1).png
