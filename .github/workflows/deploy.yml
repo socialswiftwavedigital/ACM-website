@@ -3,6 +3,7 @@ name: Deploy Website to Hostinger
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -10,19 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /
-          state-name: .acm-website-state-v1.json
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/config.php
-            **/acm-website/**
-            **/New folder/**
-            **/ACM Images Website/**
-            **/*.md
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Deploy via SSH
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" rsync -avzr \
+            --exclude='.git' --exclude='.github' --exclude='config.php' \
+            -e "ssh -p 65002 -o StrictHostKeyChecking=no" \
+            ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/u164306528/domains/acmpvtltd.com/public_html/
