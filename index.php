@@ -19,7 +19,8 @@ require_once __DIR__ . '/includes/header.php';
     ['tag'=>'HAIR CARE','title'=>'SHAMPOO &<br>CONDITIONER','lines'=>['Keratin · Anti-Dandruff · Amla','Anti-Lice · Conditioner · 15 Variants'],'btn'=>'EXPLORE SHAMPOO','link'=>'/products?cat=Shampoo+%26+Conditioner','img'=>'slide-shampoo.png'],
   ];
   foreach ($slides as $i => $s): ?>
-  <div class="slide <?= $i===0?'active':'' ?>" data-index="<?= $i ?>">
+  <div class="slide <?= $i===0?'active':'' ?>" data-index="<?= $i ?>" style="background-image:url('/images/<?= $s['img'] ?>')">
+    <div class="slide-overlay"></div>
     <div class="slide-content">
       <div class="slide-tag"><?= $s['tag'] ?></div>
       <h1 class="slide-title"><?= $s['title'] ?></h1>
@@ -29,9 +30,6 @@ require_once __DIR__ . '/includes/header.php';
         <?php endforeach; ?>
       </div>
       <a href="<?= $s['link'] ?>" class="btn-slide"><?= $s['btn'] ?></a>
-    </div>
-    <div class="slide-img">
-      <img src="/images/<?= $s['img'] ?>" alt="<?= strip_tags($s['title']) ?>">
     </div>
   </div>
   <?php endforeach; ?>

@@ -7,8 +7,8 @@
 <meta name="description" content="<?= $metaDesc ?? 'ACM Asia Cosmetics & Manufactures — Pakistan\'s Premier Cosmetics Manufacturer.' ?>">
 <title><?= $pageTitle ?? 'ACM Asia Cosmetics & Manufactures' ?></title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/style.css?v=3">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="/assets/style.css?v=4">
 </head>
 <body>
 
