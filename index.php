@@ -58,7 +58,7 @@ require_once __DIR__ . '/includes/header.php';
 <!-- About Section -->
 <section class="about-section">
   <div class="about-wrap">
-    <div class="about-text">
+    <div class="about-text reveal-left">
       <div class="section-eyebrow">WHO WE ARE</div>
       <h2 class="about-heading">YOUR TRUSTED<br><span>BEAUTY PARTNER</span></h2>
       <p>ACM Asia Cosmetics & Manufactures Private Limited is Pakistan's premium cosmetics manufacturing company. We formulate, produce and supply world-class beauty products that meet the highest international quality standards.</p>
@@ -70,7 +70,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="astat"><div class="astat-num">10+</div><div class="astat-label">YRS EXPERIENCE</div></div>
       </div>
     </div>
-    <div class="about-img-wrap">
+    <div class="about-img-wrap reveal-right">
       <div class="about-product-grid">
         <div class="apg-item apg-wide"><img src="/images/slide-creams.png" alt="Creams"></div>
         <div class="apg-item"><img src="/images/serum-hyaluronic.png" alt="Serum"></div>
@@ -103,8 +103,8 @@ require_once __DIR__ . '/includes/header.php';
         ['variants'=>'5','tag'=>'HAIR SOLUTIONS','cat'=>'HAIR CARE','desc'=>'Hair Tonic, Hair Serum, Hair Oil, Hair Gel & Hair Cream: complete hair styling & treatment.','img'=>'sh-mens.png','link'=>'/products'],
         ['variants'=>'13','tag'=>'NATURAL OILS','cat'=>'ESSENTIAL OILS','desc'=>'Coconut, Argan, Jojoba, Neem, Moringa, Kalonji, Amla, Onion & more pure natural oils.','img'=>'lot-aloe-vera.png','link'=>'/products'],
       ];
-      foreach($range as $r): ?>
-      <div class="range-card" onclick="window.location='<?= $r['link'] ?>'">
+      foreach($range as $i => $r): ?>
+      <div class="range-card reveal" style="transition-delay:<?= ($i%3)*.12 ?>s" onclick="window.location='<?= $r['link'] ?>'">
         <div class="range-card-img">
           <img src="/images/<?= $r['img'] ?>" alt="<?= $r['cat'] ?>" onerror="this.style.opacity='.1'">
         </div>
@@ -127,7 +127,7 @@ require_once __DIR__ . '/includes/header.php';
     <div class="section-eyebrow">WHY ACM</div>
     <h2 class="why-heading">BUILT ON QUALITY<br>& TRUST</h2>
     <div class="why-grid">
-      <div class="why-card">
+      <div class="why-card reveal delay-1">
         <div class="why-icon">
           <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="4" y="20" width="40" height="24" rx="2" fill="rgba(220,38,38,.15)" stroke="#DC2626" stroke-width="1.5"/>
@@ -143,7 +143,7 @@ require_once __DIR__ . '/includes/header.php';
         <h3>MODERN FACILITY</h3>
         <p>State-of-the-art manufacturing plant with automated filling, mixing and packaging lines.</p>
       </div>
-      <div class="why-card">
+      <div class="why-card reveal delay-2">
         <div class="why-icon">
           <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18 6h12v18l6 16H12L18 24V6z" fill="rgba(220,38,38,.12)" stroke="#DC2626" stroke-width="1.5" stroke-linejoin="round"/>
@@ -158,7 +158,7 @@ require_once __DIR__ . '/includes/header.php';
         <h3>R&amp;D LAB</h3>
         <p>In-house research and development team constantly innovating superior formulations.</p>
       </div>
-      <div class="why-card">
+      <div class="why-card reveal delay-3">
         <div class="why-icon">
           <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 4L6 12v14c0 10 7.8 19.3 18 21 10.2-1.7 18-11 18-21V12L24 4z" fill="rgba(220,38,38,.12)" stroke="#DC2626" stroke-width="1.5" stroke-linejoin="round"/>
@@ -168,7 +168,7 @@ require_once __DIR__ . '/includes/header.php';
         <h3>QUALITY ASSURED</h3>
         <p>Every batch tested for safety, efficacy and stability before leaving our facility.</p>
       </div>
-      <div class="why-card">
+      <div class="why-card reveal delay-4">
         <div class="why-icon">
           <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="8" y="14" width="32" height="26" rx="2" fill="rgba(220,38,38,.12)" stroke="#DC2626" stroke-width="1.5"/>
