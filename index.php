@@ -17,6 +17,7 @@ require_once __DIR__ . '/includes/header.php';
     ['tag'=>'PROTECTION','title'=>'PETROLEUM<br>JELLY','lines'=>['Colored · Original · Scented','Pharmaceutical Grade Skin Care'],'btn'=>'EXPLORE PETROLEUM JELLY','link'=>'/products?cat=Petroleum+Jelly','img'=>'slide-pjelly.png'],
     ['tag'=>'MOISTURISING','title'=>'LOTIONS','lines'=>['Brightening · Niacinamide · Vitamin C','Honey · Aloe Vera · 10 Variants'],'btn'=>'EXPLORE LOTIONS','link'=>'/products?cat=Lotions','img'=>'slide-lotions.png'],
     ['tag'=>'HAIR CARE','title'=>'SHAMPOO &<br>CONDITIONER','lines'=>['Keratin · Anti-Dandruff · Amla','Anti-Lice · Conditioner · 15 Variants'],'btn'=>'EXPLORE SHAMPOO','link'=>'/products?cat=Shampoo+%26+Conditioner','img'=>'slide-shampoo.png'],
+    ['tag'=>'BABY CARE','title'=>'BABY &<br>KIDS','lines'=>['Baby Lotion · Baby Cream · Baby Shampoo','Body Wash · Face Wash · Gentle Care'],'btn'=>'EXPLORE BABY RANGE','link'=>'/products?cat=Baby+%26+Kids','img'=>'slide-kids.png'],
   ];
   foreach ($slides as $i => $s): ?>
   <div class="slide <?= $i===0?'active':'' ?>" data-index="<?= $i ?>" style="background-image:url('/images/<?= $s['img'] ?>')">
@@ -70,7 +71,7 @@ require_once __DIR__ . '/includes/header.php';
       </div>
     </div>
     <div class="about-img-wrap">
-      <img src="/images/bk-cream.png" alt="ACM Manufacturing" onerror="this.parentElement.style.display='none'">
+      <img src="/images/cream-anti-aging.png" alt="ACM Manufacturing" onerror="this.parentElement.style.display='none'">
     </div>
   </div>
 </section>
@@ -83,15 +84,15 @@ require_once __DIR__ . '/includes/header.php';
     <div class="range-grid">
       <?php
       $range = [
-        ['variants'=>'20','tag'=>'SKINCARE','cat'=>'CREAMS','desc'=>'Vitamin C, Night, Fairness, BB Cream, Moisturizer, Sunblock SPF 30–80, Soothing Lotion & more.','img'=>'bk-cream.png','link'=>'/products?cat=Creams'],
-        ['variants'=>'11','tag'=>'TREATMENT','cat'=>'SERUMS','desc'=>'Hyaluronic Acid, Glycolic Acid, All-in-One, Multipurpose, Glutathione, Niacinamide & more.','img'=>'serum-vitamin-c.png','link'=>'/products?cat=Serums'],
-        ['variants'=>'14','tag'=>'CLEANSING','cat'=>'FACE WASH','desc'=>'Foaming, Gel, Charcoal, Gold, Turmeric, Rice, Vitamin C & more: for every skin type.','img'=>'bk-facewash.png','link'=>'/products?cat=Face+Wash'],
-        ['variants'=>'3','tag'=>'PROTECTION','cat'=>'PETROLEUM JELLY','desc'=>'Colored, Original & Scented: pharmaceutical grade petroleum jelly for skin & lip care.','img'=>'bk-pjelly.png','link'=>'/products?cat=Petroleum+Jelly'],
-        ['variants'=>'10','tag'=>'MOISTURISING','cat'=>'LOTIONS','desc'=>'Brightening, Niacinamide, Vitamin C, Honey, Cocoa Butter, Aloe Vera & more body lotions.','img'=>'bk-lotion.png','link'=>'/products?cat=Lotions'],
-        ['variants'=>'23','tag'=>'HAIR CLEANSING','cat'=>'SHAMPOO & CONDITIONER','desc'=>'Keratin, Deep, Leave-in, Argan, Onion, Color Protect & complete hair range.','img'=>'bk-shampoo.png','link'=>'/products?cat=Shampoo+%26+Conditioner'],
-        ['variants'=>'8','tag'=>'BABY CARE','cat'=>'BABY & KIDS','desc'=>'Baby Lotion, Cream, Shampoo, Face Wash, Body Wash, Oil & more: gentle care for little ones.','img'=>'bk-kids-shampoo.png','link'=>'/products?cat=Baby+%26+Kids'],
-        ['variants'=>'5','tag'=>'HAIR SOLUTIONS','cat'=>'HAIR CARE','desc'=>'Hair Tonic, Hair Serum, Hair Oil, Hair Gel & Hair Cream: complete hair styling & treatment.','img'=>'bk-body-wash.png','link'=>'/products'],
-        ['variants'=>'13','tag'=>'NATURAL OILS','cat'=>'ESSENTIAL OILS','desc'=>'Coconut, Argan, Jojoba, Neem, Moringa, Kalonji, Amla, Onion & more pure natural oils.','img'=>'bk-oil.png','link'=>'/products'],
+        ['variants'=>'20','tag'=>'SKINCARE','cat'=>'CREAMS','desc'=>'Vitamin C, Night, Fairness, BB Cream, Moisturizer, Sunblock SPF 30–80, Soothing Lotion & more.','img'=>'cream-vitamin-c.png','link'=>'/products?cat=Creams'],
+        ['variants'=>'11','tag'=>'TREATMENT','cat'=>'SERUMS','desc'=>'Hyaluronic Acid, Glycolic Acid, All-in-One, Multipurpose, Glutathione, Niacinamide & more.','img'=>'serum-hyaluronic.png','link'=>'/products?cat=Serums'],
+        ['variants'=>'14','tag'=>'CLEANSING','cat'=>'FACE WASH','desc'=>'Foaming, Gel, Charcoal, Gold, Turmeric, Rice, Vitamin C & more: for every skin type.','img'=>'fw-charcoal.png','link'=>'/products?cat=Face+Wash'],
+        ['variants'=>'3','tag'=>'PROTECTION','cat'=>'PETROLEUM JELLY','desc'=>'Colored, Original & Scented: pharmaceutical grade petroleum jelly for skin & lip care.','img'=>'pj-original.png','link'=>'/products?cat=Petroleum+Jelly'],
+        ['variants'=>'10','tag'=>'MOISTURISING','cat'=>'LOTIONS','desc'=>'Brightening, Niacinamide, Vitamin C, Honey, Cocoa Butter, Aloe Vera & more body lotions.','img'=>'lot-brightening.png','link'=>'/products?cat=Lotions'],
+        ['variants'=>'23','tag'=>'HAIR CLEANSING','cat'=>'SHAMPOO & CONDITIONER','desc'=>'Keratin, Deep, Leave-in, Argan, Onion, Color Protect & complete hair range.','img'=>'sh-keratin.png','link'=>'/products?cat=Shampoo+%26+Conditioner'],
+        ['variants'=>'8','tag'=>'BABY CARE','cat'=>'BABY & KIDS','desc'=>'Baby Lotion, Cream, Shampoo, Face Wash, Body Wash, Oil & more: gentle care for little ones.','img'=>'kids-baby-lotion.png','link'=>'/products?cat=Baby+%26+Kids'],
+        ['variants'=>'5','tag'=>'HAIR SOLUTIONS','cat'=>'HAIR CARE','desc'=>'Hair Tonic, Hair Serum, Hair Oil, Hair Gel & Hair Cream: complete hair styling & treatment.','img'=>'sh-mens.png','link'=>'/products'],
+        ['variants'=>'13','tag'=>'NATURAL OILS','cat'=>'ESSENTIAL OILS','desc'=>'Coconut, Argan, Jojoba, Neem, Moringa, Kalonji, Amla, Onion & more pure natural oils.','img'=>'lot-aloe-vera.png','link'=>'/products'],
       ];
       foreach($range as $r): ?>
       <div class="range-card" onclick="window.location='<?= $r['link'] ?>'">
