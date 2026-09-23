@@ -1,7 +1,7 @@
 /* ACM Asia Cosmetics — v5 */
 :root {
-  --navy:   #0B1527;
-  --navy2:  #0D1E3A;
+  --navy:   #1B2D6E;
+  --navy2:  #152460;
   --red:    #DC2626;
   --red2:   #B91C1C;
   --gold:   #C9A84C;
@@ -49,10 +49,10 @@ img { max-width: 100%; display: block; }
 .hero-slider { position: relative; background: var(--navy); overflow: hidden; height: 88vh; min-height: 520px; max-height: 800px; }
 .slide { position: absolute; inset: 0; opacity: 0; pointer-events: none; transition: opacity .7s ease; background-size: cover; background-position: right center; background-repeat: no-repeat; display: flex; align-items: center; }
 .slide.active { opacity: 1; pointer-events: auto; }
-.slide-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(11,21,39,.97) 38%, rgba(11,21,39,.6) 65%, rgba(11,21,39,.15) 100%); z-index: 1; }
+.slide-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(27,45,110,.82) 30%, rgba(27,45,110,.45) 58%, rgba(27,45,110,.05) 100%); z-index: 1; }
 .slide-content { position: relative; z-index: 2; padding: 0 80px; max-width: 580px; }
 .slide-tag { font-size: 11px; font-weight: 700; letter-spacing: 3px; color: var(--red); text-transform: uppercase; margin-bottom: 14px; }
-.slide-title { font-size: clamp(52px, 8vw, 96px); font-weight: 800; color: #fff; line-height: 1; text-transform: uppercase; margin-bottom: 20px; }
+.slide-title { font-size: clamp(40px, 6vw, 74px); font-weight: 800; color: #fff; line-height: 1.05; text-transform: uppercase; margin-bottom: 20px; }
 .slide-variants { margin-bottom: 36px; }
 .slide-variants p { font-size: 15px; font-weight: 400; color: rgba(255,255,255,.6); line-height: 1.9; }
 .btn-slide { display: inline-block; background: var(--red); color: #fff; font-size: 13px; font-weight: 700; letter-spacing: 2px; padding: 14px 32px; border-radius: 4px; text-transform: uppercase; transition: background .2s, transform .2s; }
@@ -242,7 +242,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 768px) {
   .slide { padding: 0 32px; flex-direction: column; justify-content: center; }
   .slide-img { display: none; }
-  .slide-title { font-size: 60px; }
+  .slide-title { font-size: 48px; }
   .hero-slider { height: 70vh; }
   .hdr-nav { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--navy); flex-direction: column; align-items: flex-start; padding: 80px 32px 32px; gap: 0; z-index: 150; overflow-y: auto; }
   .hdr-nav.open { display: flex; }
@@ -258,5 +258,5 @@ img { max-width: 100%; display: block; }
 }
 @media (max-width: 480px) {
   .why-grid, .process-grid { grid-template-columns: 1fr; }
-  .slide-title { font-size: 48px; }
+  .slide-title { font-size: 36px; }
 }
