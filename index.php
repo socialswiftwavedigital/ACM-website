@@ -128,22 +128,55 @@ require_once __DIR__ . '/includes/header.php';
     <h2 class="why-heading">BUILT ON QUALITY<br>& TRUST</h2>
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-icon">🏭</div>
+        <div class="why-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="20" width="40" height="24" rx="2" fill="rgba(220,38,38,.15)" stroke="#DC2626" stroke-width="1.5"/>
+            <rect x="10" y="28" width="6" height="6" rx="1" fill="#DC2626"/>
+            <rect x="21" y="28" width="6" height="6" rx="1" fill="#DC2626"/>
+            <rect x="32" y="28" width="6" height="16" rx="1" fill="#DC2626"/>
+            <path d="M4 20L24 6L44 20" stroke="#DC2626" stroke-width="1.5" stroke-linejoin="round"/>
+            <rect x="18" y="34" width="12" height="10" rx="1" fill="rgba(220,38,38,.3)"/>
+            <line x1="24" y1="6" x2="24" y2="2" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="24" cy="2" r="1.5" fill="#DC2626"/>
+          </svg>
+        </div>
         <h3>MODERN FACILITY</h3>
         <p>State-of-the-art manufacturing plant with automated filling, mixing and packaging lines.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">🔬</div>
-        <h3>R&D LAB</h3>
+        <div class="why-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6h12v18l6 16H12L18 24V6z" fill="rgba(220,38,38,.12)" stroke="#DC2626" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M15 34h18" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M13 38h22" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="22" cy="30" r="2" fill="#DC2626"/>
+            <circle cx="28" cy="28" r="1.5" fill="#DC2626" opacity=".7"/>
+            <rect x="21" y="6" width="6" height="2" rx="1" fill="#DC2626"/>
+            <line x1="24" y1="10" x2="24" y2="22" stroke="#DC2626" stroke-width="1" stroke-dasharray="2 2"/>
+          </svg>
+        </div>
+        <h3>R&amp;D LAB</h3>
         <p>In-house research and development team constantly innovating superior formulations.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">✅</div>
+        <div class="why-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4L6 12v14c0 10 7.8 19.3 18 21 10.2-1.7 18-11 18-21V12L24 4z" fill="rgba(220,38,38,.12)" stroke="#DC2626" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M15 24l6 6 12-12" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
         <h3>QUALITY ASSURED</h3>
         <p>Every batch tested for safety, efficacy and stability before leaving our facility.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">🏷️</div>
+        <div class="why-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="14" width="32" height="26" rx="2" fill="rgba(220,38,38,.12)" stroke="#DC2626" stroke-width="1.5"/>
+            <path d="M16 14v-2a8 8 0 0116 0v2" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="24" cy="27" r="4" fill="rgba(220,38,38,.3)" stroke="#DC2626" stroke-width="1.5"/>
+            <line x1="24" y1="31" x2="24" y2="36" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
         <h3>PRIVATE LABEL</h3>
         <p>Full private label and custom branding services for your cosmetics brand.</p>
       </div>
