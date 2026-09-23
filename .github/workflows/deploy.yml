@@ -16,7 +16,7 @@ jobs:
 
       - name: Deploy via SSH
         run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" rsync -avzr \
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" rsync -avzr --delete \
             --exclude='.git' --exclude='.github' --exclude='config.php' \
             -e "ssh -p 65002 -o StrictHostKeyChecking=no" \
             ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/u164306528/domains/acmpvtltd.com/public_html/
