@@ -71,7 +71,16 @@ require_once __DIR__ . '/includes/header.php';
       </div>
     </div>
     <div class="about-img-wrap">
-      <img src="/images/cream-anti-aging.png" alt="ACM Manufacturing" onerror="this.parentElement.style.display='none'">
+      <div class="about-product-grid">
+        <div class="apg-item apg-wide"><img src="/images/slide-creams.png" alt="Creams"></div>
+        <div class="apg-item"><img src="/images/serum-hyaluronic.png" alt="Serum"></div>
+        <div class="apg-item"><img src="/images/fw-charcoal.png" alt="Face Wash"></div>
+        <div class="apg-item"><img src="/images/lot-brightening.png" alt="Lotion"></div>
+        <div class="apg-item"><img src="/images/pj-original.png" alt="Petroleum Jelly"></div>
+        <div class="apg-item"><img src="/images/sh-keratin.png" alt="Shampoo"></div>
+        <div class="apg-item"><img src="/images/kids-baby-lotion.png" alt="Baby"></div>
+        <div class="apg-item"><img src="/images/cream-anti-aging.png" alt="Cream"></div>
+      </div>
     </div>
   </div>
 </section>
