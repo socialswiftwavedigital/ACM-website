@@ -1,0 +1,22 @@
+Options -Indexes
+
+<Files "config.php">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+php_value session.cookie_httponly 1
+php_value session.use_strict_mode 1
+
+RewriteEngine On
+RewriteBase /
+
+# Redirect .php URLs to clean URLs
+RewriteCond %{THE_REQUEST} \.php[\s?] [NC]
+RewriteRule ^([^.]+)\.php$ /$1 [R=301,L,QSA]
+
+# Serve clean URLs internally
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L,QSA]
