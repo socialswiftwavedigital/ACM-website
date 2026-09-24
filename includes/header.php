@@ -8,7 +8,7 @@
 <title><?= $pageTitle ?? 'ACM Asia Cosmetics & Manufactures' ?></title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
-<link rel="stylesheet" href="/assets/style.css?v=14">
+<link rel="stylesheet" href="/assets/style.css?v=15">
 </head>
 <body>
 
@@ -32,7 +32,7 @@
       <a href="/" class="<?= $current==='index'?'active':'' ?>">Home</a>
       <a href="/about" class="<?= $current==='about'?'active':'' ?>">About</a>
       <div class="nav-dropdown">
-        <a href="/products" class="<?= (in_array($current,['products','product']) || isset($_GET['cat']))?'active':'' ?>">Products <span class="arrow">▾</span></a>
+        <a href="/products" class="<?= (in_array($current,['products','product','category']) || isset($_GET['cat']))?'active':'' ?>">Products <span class="arrow">▾</span></a>
         <div class="dropdown-menu">
           <a href="/creams">Creams</a>
           <a href="/serums">Serums</a>

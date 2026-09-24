@@ -243,7 +243,7 @@ img { max-width: 100%; display: block; }
 .product-order-btn { background: var(--red); color: #fff; font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .8px; padding: 7px 14px; border: none; border-radius: 6px; cursor: pointer; transition: background .2s; }
 .product-order-btn:hover { background: var(--red2); }
 .cat-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
-.cat-pill { font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .8px; padding: 7px 16px; border-radius: 20px; background: #fff; color: var(--navy); border: 1.5px solid #E8ECF5; transition: all .2s; }
+.cat-pill { font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .8px; padding: 7px 16px; border-radius: 20px; background: #fff; color: var(--navy); border: 1.5px solid #E8ECF5; transition: all .2s; cursor: pointer; text-decoration: none; display: inline-block; }
 .cat-pill.active, .cat-pill:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
 
 /* ── Forms (order/contact) ── */
