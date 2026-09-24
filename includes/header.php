@@ -46,7 +46,7 @@
           <a href="/products?cat=Facial">Facial</a>
         </div>
       </div>
-      <a href="/contact#faqs">FAQs</a>
+      <a href="/faqs" class="<?= $current==='faqs'?'active':'' ?>">FAQs</a>
       <a href="/contact" class="<?= $current==='contact'?'active':'' ?>">Contact</a>
     </nav>
 
