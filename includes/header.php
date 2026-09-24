@@ -8,7 +8,7 @@
 <title><?= $pageTitle ?? 'ACM Asia Cosmetics & Manufactures' ?></title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
-<link rel="stylesheet" href="/assets/style.css?v=10">
+<link rel="stylesheet" href="/assets/style.css?v=11">
 </head>
 <body>
 

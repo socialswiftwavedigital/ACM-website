@@ -97,7 +97,7 @@ img { max-width: 100%; display: block; }
 .range-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
 .range-card { background: var(--card); border-radius: 12px; overflow: hidden; cursor: pointer; transition: transform .3s, box-shadow .3s; border: 1px solid #E8ECF5; display: flex; flex-direction: column; }
 .range-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(13,30,58,.12); }
-.range-card-img { background: var(--navy); height: 280px; overflow: hidden; flex-shrink: 0; position: relative; }
+.range-card-img { background: var(--navy); height: 340px; overflow: hidden; flex-shrink: 0; position: relative; }
 .range-card-img img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform .55s cubic-bezier(.25,.46,.45,.94); }
 .range-card:hover .range-card-img img { transform: scale(1.08); }
 .range-card-img::after { content:''; position:absolute; inset:0; background:linear-gradient(to top, rgba(13,34,88,.5) 0%, transparent 50%); pointer-events:none; }
@@ -188,7 +188,7 @@ img { max-width: 100%; display: block; }
 .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 24px; margin-top: 28px; }
 .product-card { background: #fff; border-radius: 10px; border: 1px solid #E8ECF5; cursor: pointer; transition: transform .3s, box-shadow .3s; overflow: hidden; }
 .product-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(13,30,58,.1); }
-.product-img { aspect-ratio: 1; background: var(--navy2); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+.product-img { aspect-ratio: 4/5; background: var(--navy2); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
 .product-img img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 .product-img-placeholder { font-size: 48px; opacity: .2; }
 .product-badge { position: absolute; top: 12px; left: 12px; background: var(--red); color: #fff; font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1px; padding: 4px 10px; border-radius: 20px; }
