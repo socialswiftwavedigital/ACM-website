@@ -27,7 +27,11 @@ require_once __DIR__ . '/includes/header.php';
 
 <div class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="/">Home</a> / Products <?= $cat ? '/ ' . htmlspecialchars($cat) : '' ?></div>
+    <div class="breadcrumb">
+      <a href="/">Home</a> / <a href="/products">Products</a>
+      <?php if ($cat): ?> / <a href="<?= catUrl($cat) ?>"><?= htmlspecialchars($cat) ?></a><?php endif; ?>
+      <?php if ($search): ?> / <?= htmlspecialchars($search) ?><?php endif; ?>
+    </div>
     <h1>Our Products</h1>
     <p>Premium skincare & beauty products for every skin type</p>
   </div>
@@ -37,12 +41,20 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container">
     <!-- Search + Filter -->
     <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:28px">
-      <form method="GET" action="<?= htmlspecialchars($currentCatUrl) ?>" style="flex:1;min-width:220px">
+      <form id="searchForm" style="flex:1;min-width:220px" onsubmit="return doSearch(this)">
         <div style="display:flex;gap:8px">
-          <input type="text" name="q" value="<?= htmlspecialchars($search) ?>" placeholder="Search products..." style="flex:1;padding:10px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:inherit;font-size:14px;outline:none">
+          <input type="text" name="q" id="searchInput" value="<?= htmlspecialchars($search) ?>" placeholder="Search products..." style="flex:1;padding:10px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:inherit;font-size:14px;outline:none">
           <button type="submit" class="btn btn-navy">Search</button>
         </div>
       </form>
+      <script>
+      var catBaseUrl = <?= json_encode($currentCatUrl) ?>;
+      function doSearch(f) {
+        var q = f.querySelector('[name="q"]').value.trim();
+        window.location.href = q ? catBaseUrl + '/' + encodeURIComponent(q) : catBaseUrl;
+        return false;
+      }
+      </script>
       <span style="font-size:13px;color:var(--muted)"><?= count($products) ?> product<?= count($products)!==1?'s':'' ?> found</span>
     </div>
 

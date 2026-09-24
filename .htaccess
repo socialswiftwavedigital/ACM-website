@@ -11,6 +11,19 @@ php_value session.use_strict_mode 1
 RewriteEngine On
 RewriteBase /
 
+# Category + search: /creams/vitamin  (must come before bare category rules)
+RewriteRule ^creams/(.+)$               products.php?cat=Creams&q=$1 [NE,QSA,L]
+RewriteRule ^serums/(.+)$               products.php?cat=Serums&q=$1 [NE,QSA,L]
+RewriteRule ^face-wash/(.+)$            products.php?cat=Face+Wash&q=$1 [NE,QSA,L]
+RewriteRule ^petroleum-jelly/(.+)$      products.php?cat=Petroleum+Jelly&q=$1 [NE,QSA,L]
+RewriteRule ^lotions/(.+)$              products.php?cat=Lotions&q=$1 [NE,QSA,L]
+RewriteRule ^shampoo-conditioner/(.+)$  products.php?cat=Shampoo+%26+Conditioner&q=$1 [NE,QSA,L]
+RewriteRule ^baby-kids/(.+)$            products.php?cat=Baby+%26+Kids&q=$1 [NE,QSA,L]
+RewriteRule ^hair-care/(.+)$            products.php?cat=Hair+Care&q=$1 [NE,QSA,L]
+RewriteRule ^essential-oils/(.+)$       products.php?cat=Essential+Oils&q=$1 [NE,QSA,L]
+RewriteRule ^facial/(.+)$               products.php?cat=Facial&q=$1 [NE,QSA,L]
+RewriteRule ^products/(.+)$             products.php?q=$1 [NE,QSA,L]
+
 # Category pages (must come before the .php rewrite)
 RewriteRule ^creams/?$               products.php?cat=Creams [QSA,L]
 RewriteRule ^serums/?$               products.php?cat=Serums [QSA,L]
