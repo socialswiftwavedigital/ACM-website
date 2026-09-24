@@ -4,11 +4,18 @@ DirectoryIndex index.php
   Require all denied
 </Files>
 
+<Files "admin/config.php">
+  Require all denied
+</Files>
+
 php_value session.cookie_httponly 1
 php_value session.use_strict_mode 1
 
 RewriteEngine On
 RewriteBase /
+
+# Skip admin folder entirely — handled by admin/.htaccess
+RewriteRule ^admin(/.*)?$ - [L]
 
 # Category + search: /creams/vitamin  (must come before bare category rules)
 RewriteRule ^creams/(.+)$               products.php?cat=Creams&q=$1 [NE,QSA,L]

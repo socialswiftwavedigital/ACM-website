@@ -1,5 +1,7 @@
 # Credentials — never commit
 config.php
+admin/config.php
+admin/.login_attempts.json
 
 # Nested folders (not part of this project)
 acm-website/

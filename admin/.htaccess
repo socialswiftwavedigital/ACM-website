@@ -1,0 +1,23 @@
+DirectoryIndex index.php
+
+# Protect sensitive files
+<FilesMatch "^(config\.php|\.login_attempts\.json)$">
+  Require all denied
+</FilesMatch>
+
+# PHP settings
+php_value session.cookie_httponly 1
+php_value session.use_strict_mode 1
+
+RewriteEngine On
+RewriteBase /admin/
+
+# Redirect .php URLs to clean URLs
+RewriteCond %{THE_REQUEST} \.php[\s?] [NC]
+RewriteRule ^([^.]+)\.php$ /admin/$1 [R=301,L,QSA]
+
+# Internally serve clean URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L,QSA]
