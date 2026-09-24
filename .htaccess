@@ -11,6 +11,18 @@ php_value session.use_strict_mode 1
 RewriteEngine On
 RewriteBase /
 
+# Category pages (must come before the .php rewrite)
+RewriteRule ^creams/?$               products.php?cat=Creams [QSA,L]
+RewriteRule ^serums/?$               products.php?cat=Serums [QSA,L]
+RewriteRule ^face-wash/?$            products.php?cat=Face+Wash [QSA,L]
+RewriteRule ^petroleum-jelly/?$      products.php?cat=Petroleum+Jelly [QSA,L]
+RewriteRule ^lotions/?$              products.php?cat=Lotions [QSA,L]
+RewriteRule ^shampoo-conditioner/?$  products.php?cat=Shampoo+%26+Conditioner [QSA,L]
+RewriteRule ^baby-kids/?$            products.php?cat=Baby+%26+Kids [QSA,L]
+RewriteRule ^hair-care/?$            products.php?cat=Hair+Care [QSA,L]
+RewriteRule ^essential-oils/?$       products.php?cat=Essential+Oils [QSA,L]
+RewriteRule ^facial/?$               products.php?cat=Facial [QSA,L]
+
 # Redirect .php URLs to clean URLs
 RewriteCond %{THE_REQUEST} \.php[\s?] [NC]
 RewriteRule ^([^.]+)\.php$ /$1 [R=301,L,QSA]

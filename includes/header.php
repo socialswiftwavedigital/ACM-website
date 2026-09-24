@@ -32,18 +32,18 @@
       <a href="/" class="<?= $current==='index'?'active':'' ?>">Home</a>
       <a href="/about" class="<?= $current==='about'?'active':'' ?>">About</a>
       <div class="nav-dropdown">
-        <a href="/products" class="<?= in_array($current,['products','product'])?'active':'' ?>">Products <span class="arrow">▾</span></a>
+        <a href="/products" class="<?= (in_array($current,['products','product']) || isset($_GET['cat']))?'active':'' ?>">Products <span class="arrow">▾</span></a>
         <div class="dropdown-menu">
-          <a href="/products?cat=Creams">Creams</a>
-          <a href="/products?cat=Serums">Serums</a>
-          <a href="/products?cat=Face+Wash">Face Wash</a>
-          <a href="/products?cat=Petroleum+Jelly">Petroleum Jelly</a>
-          <a href="/products?cat=Lotions">Lotions</a>
-          <a href="/products?cat=Shampoo+%26+Conditioner">Shampoo & Conditioner</a>
-          <a href="/products?cat=Baby+%26+Kids">Baby & Kids</a>
-          <a href="/products?cat=Hair+Care">Hair Care</a>
-          <a href="/products?cat=Essential+Oils">Essential Oils</a>
-          <a href="/products?cat=Facial">Facial</a>
+          <a href="/creams">Creams</a>
+          <a href="/serums">Serums</a>
+          <a href="/face-wash">Face Wash</a>
+          <a href="/petroleum-jelly">Petroleum Jelly</a>
+          <a href="/lotions">Lotions</a>
+          <a href="/shampoo-conditioner">Shampoo & Conditioner</a>
+          <a href="/baby-kids">Baby & Kids</a>
+          <a href="/hair-care">Hair Care</a>
+          <a href="/essential-oils">Essential Oils</a>
+          <a href="/facial">Facial</a>
         </div>
       </div>
       <a href="/faqs" class="<?= $current==='faqs'?'active':'' ?>">FAQs</a>

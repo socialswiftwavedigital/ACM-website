@@ -2,8 +2,10 @@
 session_start();
 require_once __DIR__ . '/includes/db.php';
 
+require_once __DIR__ . '/includes/cat-urls.php';
 $cat    = $_GET['cat'] ?? '';
 $search = trim($_GET['q'] ?? '');
+$currentCatUrl = $cat ? catUrl($cat) : '/products';
 
 $where = ['1=1'];
 $params = [];
@@ -35,8 +37,7 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container">
     <!-- Search + Filter -->
     <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:28px">
-      <form method="GET" style="flex:1;min-width:220px">
-        <?php if($cat): ?><input type="hidden" name="cat" value="<?= htmlspecialchars($cat) ?>"><?php endif; ?>
+      <form method="GET" action="<?= htmlspecialchars($currentCatUrl) ?>" style="flex:1;min-width:220px">
         <div style="display:flex;gap:8px">
           <input type="text" name="q" value="<?= htmlspecialchars($search) ?>" placeholder="Search products..." style="flex:1;padding:10px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:inherit;font-size:14px;outline:none">
           <button type="submit" class="btn btn-navy">Search</button>
@@ -49,7 +50,7 @@ require_once __DIR__ . '/includes/header.php';
     <div class="cat-pills">
       <a href="/products" class="cat-pill <?= !$cat?'active':'' ?>">All</a>
       <?php foreach ($cats as $c): ?>
-      <a href="/products?cat=<?= urlencode($c) ?>" class="cat-pill <?= $cat===$c?'active':'' ?>"><?= htmlspecialchars($c) ?></a>
+      <a href="<?= catUrl($c) ?>" class="cat-pill <?= $cat===$c?'active':'' ?>"><?= htmlspecialchars($c) ?></a>
       <?php endforeach; ?>
     </div>
 

@@ -18,6 +18,7 @@ $related = $rel->fetchAll();
 $displayName = preg_replace('/^ACM\s+/i', '', $p['name']);
 $pageTitle = htmlspecialchars($displayName) . ' — ACM Asia Cosmetics';
 $metaDesc  = 'Order ' . $displayName . ' from ACM Asia Cosmetics. Minimum order 100 pcs. Bulk manufacturing available across Pakistan.';
+require_once __DIR__ . '/includes/cat-urls.php';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -26,7 +27,7 @@ require_once __DIR__ . '/includes/header.php';
     <div class="breadcrumb">
       <a href="/">Home</a> /
       <a href="/products">Products</a> /
-      <a href="/products?cat=<?= urlencode($p['category']) ?>"><?= htmlspecialchars($p['category']) ?></a> /
+      <a href="<?= catUrl($p['category']) ?>"><?= htmlspecialchars($p['category']) ?></a> /
       <?= htmlspecialchars($p['name']) ?>
     </div>
   </div>
