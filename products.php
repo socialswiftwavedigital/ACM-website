@@ -78,6 +78,13 @@ require_once __DIR__ . '/includes/header.php';
         <div class="product-body">
           <div class="product-cat"><?= htmlspecialchars($p['category']) ?></div>
           <div class="product-name"><?= htmlspecialchars(preg_replace('/^ACM\s+/i', '', $p['name'])) ?></div>
+          <?php if (!empty($p['variants'])): ?>
+          <div class="product-variants">
+            <?php foreach(explode(',', $p['variants']) as $v): ?>
+            <span class="variant-chip"><?= htmlspecialchars(trim($v)) ?></span>
+            <?php endforeach; ?>
+          </div>
+          <?php endif; ?>
           <div class="product-moq">
             <span class="moq-badge">Min. Order: 100 pcs</span>
             <span class="moq-bulk">Bulk Available</span>
