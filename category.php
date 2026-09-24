@@ -21,6 +21,8 @@ $catMeta = [
       ['q'=>'Can I get custom formulations for face creams?','a'=>'Yes, our R&D team develops custom cream formulas tailored to your brand requirements, target audience, and skin concerns. We handle everything from formulation to final packaging.'],
       ['q'=>'What is the minimum order quantity for creams?','a'=>'Our standard MOQ is 100 pieces per variant. Bulk discounts are available for orders of 500 pieces or more.'],
       ['q'=>'Do your skin creams meet Pakistani regulatory standards?','a'=>'All ACM skin creams are manufactured under ISO quality standards and comply with DRAP regulations for cosmetic products in Pakistan.'],
+      ['q'=>'What packaging sizes are available for face creams?','a'=>'We offer creams in 15g, 30g, 50g, and 100g packaging. Custom jar sizes, tube packaging, and airless pump dispensers are available for private label orders.'],
+      ['q'=>'How long does private label cream manufacturing take?','a'=>'Standard production time is 15–25 working days after formula approval and artwork finalization. Rush production is available for urgent orders.'],
     ],
   ],
   'Serums' => [
@@ -33,6 +35,8 @@ $catMeta = [
       ['q'=>'Are your serums suitable for all skin types?','a'=>'Yes, we formulate serums for all skin types — oily, dry, combination, and sensitive. Our team can customize formulas for specific skin concerns.'],
       ['q'=>'What packaging options are available for serums?','a'=>'We offer serums in dropper bottles, pump bottles, and tubes. Custom packaging with your brand logo and design is available for all variants.'],
       ['q'=>'Can I private label your serums under my brand?','a'=>'Absolutely. We specialize in private label manufacturing — you provide the branding and we handle production, filling, and packaging from start to finish.'],
+      ['q'=>'What concentration levels are available for active serums?','a'=>'We manufacture serums at various concentration levels — for example Niacinamide at 5%, 10%, and 15%, and Vitamin C at 10%, 15%, and 20% — as per your target skin concern and market requirements.'],
+      ['q'=>'How do I get a sample of your serums before placing a bulk order?','a'=>'We provide pre-production samples on request. Sample fees may apply and are typically credited against your first bulk order. Contact us on WhatsApp to arrange your sample.'],
     ],
   ],
   'Face Wash' => [
@@ -45,6 +49,8 @@ $catMeta = [
       ['q'=>'Are your face washes suitable for sensitive skin?','a'=>'Yes, we have specific formulas for sensitive skin including our Creamy Face Wash and gentle herbal variants. Custom hypoallergenic formulations are also available.'],
       ['q'=>'Do you offer sulfate-free face wash manufacturing?','a'=>'Yes, we manufacture sulfate-free, paraben-free, and dermatologist-tested face wash formulas as per your brand and market requirements.'],
       ['q'=>'What is the shelf life of your face washes?','a'=>'Our face washes typically have a 24-month shelf life under standard storage conditions. Detailed stability data is available on request.'],
+      ['q'=>'What packaging is available for private label face wash?','a'=>'We offer face wash in 50ml, 100ml, and 150ml tube or bottle packaging. Flip-cap, pump, and squeeze-tube options are available with full custom branding.'],
+      ['q'=>'Can I get a custom fragrance for my face wash brand?','a'=>'Yes, we offer custom fragrance options for all face wash variants. Our perfumers work with you to create a signature scent that aligns with your brand identity.'],
     ],
   ],
   'Petroleum Jelly' => [
@@ -57,6 +63,8 @@ $catMeta = [
       ['q'=>'Is your petroleum jelly safe for babies?','a'=>'Yes, our original petroleum jelly is pharmaceutical-grade and gentle enough for baby skin care, diaper rash protection, and cradle cap treatment.'],
       ['q'=>'Can I get petroleum jelly in different jar sizes?','a'=>'Yes, we offer petroleum jelly in 50g, 100g, 250g, and 500g jar sizes. Custom sizes and packaging designs are available for bulk orders.'],
       ['q'=>'Is your petroleum jelly USP/BP grade?','a'=>'Yes, we use pharmaceutical-grade petroleum jelly meeting USP and BP standards as the base material in our manufacturing process.'],
+      ['q'=>'Can I add custom colors and fragrances to the petroleum jelly?','a'=>'Yes, we offer a range of cosmetic colorants and fragrances. Popular options include pink, lavender, and peach tints with matching floral or fruity scents for branded retail products.'],
+      ['q'=>'What is the MOQ for petroleum jelly manufacturing?','a'=>'Our standard MOQ is 100 units per variant. Bulk pricing is available for orders of 500 units or more, with further discounts for 1000+ unit orders.'],
     ],
   ],
   'Lotions' => [
@@ -69,6 +77,8 @@ $catMeta = [
       ['q'=>'Can I get custom scented body lotions?','a'=>'Yes, we create custom fragrances and scent profiles for body lotions. Our perfumers work with you to develop your brand\'s signature scent.'],
       ['q'=>'What packaging is available for body lotions?','a'=>'We offer lotion bottles, pump dispensers, squeeze tubes, and jars in various sizes. Custom packaging design with your branding is available.'],
       ['q'=>'Are your lotions dermatologist tested?','a'=>'Yes, our lotion formulations are tested for skin safety. Dermatologist test reports are available on request for private label orders.'],
+      ['q'=>'Can I get a winter-specific or summer-specific lotion formula?','a'=>'Yes, we develop seasonal formulations — richer butter-based lotions for winter and lightweight gel-lotion hybrids for summer. Tell us your target season and market.'],
+      ['q'=>'What active ingredients can be added to body lotions?','a'=>'We can incorporate Vitamin C, Niacinamide, Hyaluronic Acid, Kojic Acid, AHAs, Retinol, and natural extracts into body lotions depending on your desired skin benefits.'],
     ],
   ],
   'Shampoo & Conditioner' => [
@@ -77,10 +87,12 @@ $catMeta = [
     'sub'     => 'Keratin · Anti-Dandruff · Sulphate-Free · Argan · Amla · Herbal',
     'desc'    => 'ACM\'s shampoo and conditioner range offers 15+ variants targeting every hair type and concern. From Keratin Repair and Argan Oil nourishment to Anti-Dandruff treatment and Sulphate-Free gentle cleansing — our hair care products deliver salon-quality results at scale. We offer complete private label hair care solutions with custom formulations, fragrances, and branded packaging for retail and professional markets.',
     'faqs'    => [
-      ['q'=>'What shampoo variants does ACM manufacture?','a'=>'We manufacture 15+ shampoo variants including Keratin Shampoo, Herbal Shampoo, Anti-Dandruff Shampoo, Sulphate-Free Shampoo, Argan Oil Shampoo, Onion Shampoo, Color Protect Shampoo, Amla Shampoo, Men\'s Shampoo, Deep Cleansing Shampoo, Leave-in Conditioner, and more.'],
+      ['q'=>'What shampoo variants does ACM manufacture?','a'=>'We manufacture 15+ shampoo variants including Keratin Shampoo, Herbal Shampoo, Anti-Dandruff Shampoo, Sulphate-Free Shampoo, Argan Oil Shampoo, Onion Shampoo, Color Protect Shampoo, Amla Shampoo, Men\'s Shampoo, Deep Cleansing Shampoo, and more.'],
       ['q'=>'Do you manufacture sulfate-free shampoos?','a'=>'Yes, we manufacture sulfate-free, paraben-free, and silicone-free shampoo formulas for brands targeting organic and natural hair care markets.'],
       ['q'=>'Can you manufacture shampoo and conditioner as a set?','a'=>'Absolutely. We manufacture matching shampoo and conditioner sets with complementary formulas, ideal for complete private label hair care collections.'],
       ['q'=>'What sizes are available for shampoo bottles?','a'=>'We offer shampoo in 200ml, 300ml, 500ml, and 1L packaging. Sachet and travel-size packaging are also available for promotional use.'],
+      ['q'=>'Can I get an anti-hair fall shampoo with biotin?','a'=>'Yes, we formulate anti-hair fall shampoos enriched with biotin, caffeine, saw palmetto, and keratin proteins to strengthen hair and reduce breakage.'],
+      ['q'=>'Do you offer 2-in-1 shampoo and conditioner manufacturing?','a'=>'Yes, we manufacture 2-in-1 shampoo-conditioner combinations for brands looking for convenient single-step hair care products. Custom formulations are available.'],
     ],
   ],
   'Baby & Kids' => [
@@ -93,6 +105,8 @@ $catMeta = [
       ['q'=>'What baby products does ACM manufacture?','a'=>'We manufacture 8 baby products: Baby Lotion, Baby Cream, Baby Shampoo, Baby Face Wash, Baby Body Wash, Baby Oil, Baby Petroleum Jelly, and Kids Shampoo.'],
       ['q'=>'Can I get tear-free baby shampoo?','a'=>'Yes, our standard baby shampoo is formulated to be tear-free and mild around the eyes, safe for daily use on infants and toddlers.'],
       ['q'=>'Do your baby products have dermatologist approval?','a'=>'Yes, our baby care formulations are dermatologically tested and designed to meet international safety standards for baby cosmetics.'],
+      ['q'=>'Can I launch a complete baby care brand with ACM?','a'=>'Yes, we offer a full private label baby care range — all 8 products with matching branding, coordinated packaging, and custom labels to launch a complete baby care collection.'],
+      ['q'=>'What certifications do your baby products carry?','a'=>'Our baby products are manufactured under ISO quality standards. They are free from harmful chemicals and formulated to comply with EU and international cosmetic safety regulations.'],
     ],
   ],
   'Hair Care' => [
@@ -107,6 +121,8 @@ $catMeta = [
       ['q'=>'Can I get a custom hair oil blend?','a'=>'Yes, we create custom hair oil blends combining natural oils like coconut, argan, castor, jojoba, and essential oils based on your formula requirements.'],
       ['q'=>'Is your hair gel suitable for all hair types?','a'=>'Our hair gel is formulated for all hair types. We can customize the hold level (light, medium, or strong) and add specific ingredients for your target market.'],
       ['q'=>'Do you offer organic hair care formulations?','a'=>'Yes, we offer natural and organic hair care formulations using plant-based ingredients, free from silicones and synthetic chemicals.'],
+      ['q'=>'Can I get a biotin-enriched hair tonic for hair growth?','a'=>'Yes, our hair tonic range includes biotin, caffeine, niacinamide, and herbal extracts specifically formulated to stimulate hair growth and reduce hair fall.'],
+      ['q'=>'What packaging options are available for hair care products?','a'=>'Hair tonic and serum come in dropper and spray bottle formats; hair oil in dropper and flip-cap bottles; hair gel in tubes and jars; hair cream in jars and tubes. All available with custom branding.'],
     ],
   ],
   'Essential Oils' => [
@@ -121,6 +137,8 @@ $catMeta = [
       ['q'=>'Are your essential oils pure and undiluted?','a'=>'Yes, we manufacture pure, high-quality essential oils from natural plant sources. We supply 100% pure undiluted oils as well as diluted carrier oil blends as required.'],
       ['q'=>'What packaging is available for essential oils?','a'=>'We offer glass dropper bottles (10ml, 30ml), amber glass bottles (50ml, 100ml), and larger plastic bottles (200ml+). Custom label and packaging design is available.'],
       ['q'=>'Can I get a custom essential oil blend?','a'=>'Yes, we create custom oil blends for hair care, skin care, and wellness. Our team formulates based on your specific requirements and target benefits.'],
+      ['q'=>'What is the minimum order quantity for essential oils?','a'=>'Our standard MOQ is 100 units per variant for most oils. For premium oils like Argan and Jojoba, MOQ may vary. Contact us for specific pricing and quantities.'],
+      ['q'=>'Do you supply Kalonji (Black Seed) oil for medicinal use?','a'=>'Yes, we supply pharmaceutical-grade Kalonji oil suitable for both cosmetic and wellness use. Certificates of analysis are available for all oil variants on request.'],
     ],
   ],
   'Facial' => [
@@ -135,6 +153,8 @@ $catMeta = [
       ['q'=>'Are your facial masks suitable for salon use?','a'=>'Yes, our facial products are formulated for both retail consumer use and professional salon applications. Larger professional-size packaging is available.'],
       ['q'=>'Can I get a custom face scrub formula?','a'=>'Yes, we develop custom face scrub formulas with various exfoliating agents including walnut shell powder, sugar crystals, and natural microbeads.'],
       ['q'=>'Are your facial products free from harmful chemicals?','a'=>'Yes, all facial care products are formulated without harmful chemicals. We use dermatologist-approved, safe ingredients suitable for regular use on all skin types.'],
+      ['q'=>'Can I launch a full facial kit under my private label brand?','a'=>'Yes, we can assemble a complete facial kit including Cleanser, Mask, Scrub, and Toner — all under your brand with coordinated packaging and design.'],
+      ['q'=>'What is the shelf life of your facial masks?','a'=>'Our facial masks and treatments have an 18–24 month shelf life when stored in a cool, dry place. Full stability testing reports are available for export orders.'],
     ],
   ],
 ];
@@ -151,23 +171,8 @@ if ($d['banner']):
 ?>
 <div class="cat-hero" style="background-image:url('/images/<?= htmlspecialchars($d['banner']) ?>')">
   <div class="cat-hero-overlay"></div>
-  <div class="container cat-hero-content">
-    <div class="cat-hero-tag"><?= htmlspecialchars($cat) ?></div>
-    <h1 class="cat-hero-title"><?= htmlspecialchars($d['tagline']) ?></h1>
-    <p class="cat-hero-sub"><?= htmlspecialchars($d['sub']) ?></p>
-    <div class="cat-hero-actions">
-      <a href="https://wa.me/923255129241?text=<?= urlencode('I want to enquire about ' . $cat) ?>" target="_blank" class="btn-wa-lg">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.104.549 4.076 1.508 5.793L0 24l6.399-1.489A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.5-5.2-1.373l-.374-.22-3.8.885.928-3.694-.243-.38A9.946 9.946 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-        WhatsApp Enquiry
-      </a>
-      <a href="/order" class="btn-get-quote">Get A Quote →</a>
-    </div>
-  </div>
-</div>
-<?php else: ?>
-<div class="cat-hero cat-hero-plain" style="background:<?= $d['hero_bg'] ?>">
-  <div class="container cat-hero-content">
-    <div>
+  <div class="container">
+    <div class="cat-hero-inner">
       <div class="cat-hero-tag"><?= htmlspecialchars($cat) ?></div>
       <h1 class="cat-hero-title"><?= htmlspecialchars($d['tagline']) ?></h1>
       <p class="cat-hero-sub"><?= htmlspecialchars($d['sub']) ?></p>
@@ -179,9 +184,23 @@ if ($d['banner']):
         <a href="/order" class="btn-get-quote">Get A Quote →</a>
       </div>
     </div>
-    <?php if (!empty($d['hero_img'])): ?>
-    <img src="/images/<?= htmlspecialchars($d['hero_img']) ?>" alt="<?= htmlspecialchars($cat) ?>" class="cat-hero-product-img">
-    <?php endif; ?>
+  </div>
+</div>
+<?php else: ?>
+<div class="cat-hero cat-hero-plain" style="background:<?= $d['hero_bg'] ?>">
+  <div class="container">
+    <div class="cat-hero-inner">
+      <div class="cat-hero-tag"><?= htmlspecialchars($cat) ?></div>
+      <h1 class="cat-hero-title"><?= htmlspecialchars($d['tagline']) ?></h1>
+      <p class="cat-hero-sub"><?= htmlspecialchars($d['sub']) ?></p>
+      <div class="cat-hero-actions">
+        <a href="https://wa.me/923255129241?text=<?= urlencode('I want to enquire about ' . $cat) ?>" target="_blank" class="btn-wa-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.104.549 4.076 1.508 5.793L0 24l6.399-1.489A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.5-5.2-1.373l-.374-.22-3.8.885.928-3.694-.243-.38A9.946 9.946 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp Enquiry
+        </a>
+        <a href="/order" class="btn-get-quote">Get A Quote →</a>
+      </div>
+    </div>
   </div>
 </div>
 <?php endif; ?>
@@ -193,7 +212,7 @@ if ($d['banner']):
   </div>
 </div>
 
-<!-- Products -->
+<!-- ── PRODUCTS ──────────────────────────────────────────── -->
 <section class="section">
   <div class="container">
     <div class="cat-section-hdr">
@@ -250,12 +269,12 @@ if ($d['banner']):
   </div>
 </section>
 
-<!-- SEO Content -->
+<!-- ── SEO CONTENT ───────────────────────────────────────── -->
 <section class="section" style="background:var(--offwhite)">
-  <div class="container" style="max-width:860px">
+  <div class="container">
     <p class="cat-section-tag">ABOUT</p>
-    <h2 class="cat-section-title" style="margin-bottom:20px"><?= htmlspecialchars($cat) ?> Manufacturing in Pakistan</h2>
-    <p style="font-size:15px;line-height:1.85;color:#444"><?= nl2br(htmlspecialchars($d['desc'])) ?></p>
+    <h2 class="cat-section-title"><?= htmlspecialchars($cat) ?> Manufacturing in Pakistan</h2>
+    <p class="cat-desc-text"><?= nl2br(htmlspecialchars($d['desc'])) ?></p>
     <div class="cat-features-grid">
       <div class="cat-feature"><span class="cat-feature-icon">🏭</span><div><strong>OEM Manufacturing</strong><br><span>Full-service contract manufacturing</span></div></div>
       <div class="cat-feature"><span class="cat-feature-icon">🏷️</span><div><strong>Private Label</strong><br><span>Your brand, our quality</span></div></div>
@@ -265,25 +284,42 @@ if ($d['banner']):
   </div>
 </section>
 
-<!-- FAQs -->
+<!-- ── FAQs ──────────────────────────────────────────────── -->
 <section class="section">
-  <div class="container" style="max-width:800px">
+  <div class="container">
     <p class="cat-section-tag">FAQ</p>
-    <h2 class="cat-section-title" style="margin-bottom:28px"><?= htmlspecialchars($cat) ?> — Frequently Asked Questions</h2>
-    <div class="faq-list">
-      <?php foreach ($d['faqs'] as $faq): ?>
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-          <?= htmlspecialchars($faq['q']) ?> <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a"><?= htmlspecialchars($faq['a']) ?></div>
+    <h2 class="cat-section-title"><?= htmlspecialchars($cat) ?> — Frequently Asked Questions</h2>
+    <?php
+      $faqs  = $d['faqs'];
+      $left  = array_slice($faqs, 0, 3);
+      $right = array_slice($faqs, 3, 3);
+    ?>
+    <div class="faq-grid">
+      <div class="faq-col">
+        <?php foreach ($left as $faq): ?>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <?= htmlspecialchars($faq['q']) ?> <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><?= htmlspecialchars($faq['a']) ?></div>
+        </div>
+        <?php endforeach; ?>
       </div>
-      <?php endforeach; ?>
+      <div class="faq-col">
+        <?php foreach ($right as $faq): ?>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <?= htmlspecialchars($faq['q']) ?> <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><?= htmlspecialchars($faq['a']) ?></div>
+        </div>
+        <?php endforeach; ?>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- ── CTA ───────────────────────────────────────────────── -->
 <section style="background:var(--navy);padding:60px 0;text-align:center">
   <div class="container">
     <h2 style="color:#fff;font-size:28px;font-weight:800;margin-bottom:10px">Ready to Order <?= htmlspecialchars($cat) ?>?</h2>
@@ -296,63 +332,95 @@ if ($d['banner']):
 </section>
 
 <style>
-/* ── Category Hero ───────────────────────── */
+/* ── HERO ─────────────────────────────────────────────── */
 .cat-hero {
   position: relative;
-  min-height: 420px;
+  min-height: 520px;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   display: flex;
   align-items: center;
 }
 .cat-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(13,34,88,.85) 45%, rgba(13,34,88,.35));
+  background: linear-gradient(100deg, rgba(13,34,88,.95) 0%, rgba(13,34,88,.85) 55%, rgba(13,34,88,.60) 100%);
 }
-.cat-hero-plain { min-height: 360px; }
-.cat-hero-content {
+.cat-hero-plain {
+  min-height: 460px;
+}
+.cat-hero > .container {
   position: relative;
   z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+  width: 100%;
+}
+.cat-hero-inner {
+  max-width: 600px;
+  padding: 60px 0;
 }
 .cat-hero-tag {
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   color: var(--red);
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 .cat-hero-title {
-  font-size: clamp(28px, 5vw, 48px);
+  font-size: clamp(30px, 5vw, 52px);
   font-weight: 900;
   color: #fff;
   line-height: 1.1;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 .cat-hero-sub {
-  color: rgba(255,255,255,.75);
+  color: rgba(255,255,255,.72);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.cat-hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.btn-wa-lg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff;
   font-size: 14px;
-  margin-bottom: 28px;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: .15s;
 }
-.cat-hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-.cat-hero-product-img {
-  width: 280px;
-  max-width: 40%;
-  object-fit: contain;
-  border-radius: 12px;
-  flex-shrink: 0;
+.btn-wa-lg:hover { background: #1ebe57; }
+.btn-get-quote {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.6);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: .15s;
 }
+.btn-get-quote:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+
 @media(max-width:640px) {
-  .cat-hero-product-img { display: none; }
-  .cat-hero { min-height: 320px; }
+  .cat-hero { min-height: 380px; }
+  .cat-hero-inner { padding: 40px 0; }
+  .cat-hero-title { font-size: 28px; }
 }
 
-/* ── Section headers ─────────────────────── */
+/* ── Section headers ─────────────────────────────────── */
 .cat-section-tag {
   font-size: 11px;
   font-weight: 800;
@@ -387,12 +455,26 @@ if ($d['banner']):
   flex-shrink: 0;
 }
 
-/* ── Features grid ───────────────────────── */
+/* ── Description text ─────────────────────────────────── */
+.cat-desc-text {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 36px;
+  max-width: 820px;
+}
+
+/* ── Features grid ────────────────────────────────────── */
 .cat-features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 36px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media(max-width:800px) {
+  .cat-features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width:460px) {
+  .cat-features-grid { grid-template-columns: 1fr; }
 }
 .cat-feature {
   display: flex;
@@ -407,13 +489,57 @@ if ($d['banner']):
 .cat-feature strong { display: block; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
 .cat-feature span { font-size: 12px; color: var(--muted); }
 
-/* ── FAQ reuse ───────────────────────────── */
-.faq-list { display: flex; flex-direction: column; gap: 12px; }
-.faq-item { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(13,34,88,.07); }
-.faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 24px; background: none; border: none; font-family: 'Poppins',sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); cursor: pointer; text-align: left; }
-.faq-icon { font-size: 22px; font-weight: 400; flex-shrink: 0; transition: transform .25s; }
-.faq-a { max-height: 0; overflow: hidden; padding: 0 24px; font-size: 14px; color: #555; line-height: 1.75; transition: max-height .3s ease, padding .3s ease; }
-.faq-item.open .faq-a { max-height: 200px; padding: 0 24px 20px; }
+/* ── FAQ 3×2 grid ─────────────────────────────────────── */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 28px;
+  align-items: start;
+}
+@media(max-width:700px) {
+  .faq-grid { grid-template-columns: 1fr; gap: 0; }
+}
+.faq-col { display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(13,34,88,.07);
+}
+.faq-q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.4;
+}
+.faq-icon {
+  font-size: 22px;
+  font-weight: 400;
+  flex-shrink: 0;
+  transition: transform .25s;
+  color: var(--red);
+}
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 22px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.75;
+  transition: max-height .3s ease, padding .3s ease;
+}
+.faq-item.open .faq-a { max-height: 220px; padding: 0 22px 18px; }
 .faq-item.open .faq-icon { transform: rotate(45deg); }
 </style>
 
