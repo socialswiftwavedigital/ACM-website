@@ -403,6 +403,7 @@ a, button { transition: all .2s ease; }
   .dropdown-menu { position: static; border: none; background: transparent; padding: 0; display: block; }
   .dropdown-menu a { font-size: 16px; padding: 10px 16px; }
   .hdr-burger { display: block; margin-left: auto; }
+  .btn-wa { display: none; }
   .range-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr 1fr; }
   .about-stats { grid-template-columns: repeat(2,1fr); }
