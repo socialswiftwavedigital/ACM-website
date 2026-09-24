@@ -15,7 +15,7 @@ require_once __DIR__ . '/includes/header.php';
     ['tag'=>'TREATMENT','title'=>'SERUMS','lines'=>['Hyaluronic Acid · Vitamin C · Niacinamide','Glutathione · Alpha Arbutin · Zinc PCA'],'btn'=>'EXPLORE SERUMS','link'=>'/products?cat=Serums','img'=>'slide-serums.png'],
     ['tag'=>'CLEANSING','title'=>'FACE WASH','lines'=>['Foaming · Charcoal · Gold · Turmeric','Vitamin C · Rice · Herbal · 14 Variants'],'btn'=>'EXPLORE FACE WASH','link'=>'/products?cat=Face+Wash','img'=>'slide-facewash.png'],
     ['tag'=>'PROTECTION','title'=>'PETROLEUM<br>JELLY','lines'=>['Colored · Original · Scented','Pharmaceutical Grade Skin Care'],'btn'=>'EXPLORE PETROLEUM JELLY','link'=>'/products?cat=Petroleum+Jelly','img'=>'slide-pjelly.png'],
-    ['tag'=>'MOISTURISING','title'=>'LOTIONS','lines'=>['Brightening · Niacinamide · Vitamin C','Honey · Aloe Vera · 10 Variants'],'btn'=>'EXPLORE LOTIONS','link'=>'/products?cat=Lotions','img'=>'slide-lotions.png'],
+    ['tag'=>'MOISTURISING','title'=>'LOTIONS','lines'=>['Brightening · Niacinamide · Vitamin C','Honey · Aloe Vera · 10 Variants'],'btn'=>'EXPLORE LOTIONS','link'=>'/products?cat=Lotions','img'=>'slide-lotions-v2.png'],
     ['tag'=>'HAIR CARE','title'=>'SHAMPOO<br>& CONDITIONER','lines'=>['Keratin · Anti-Dandruff · Amla','Anti-Lice · Conditioner · 15 Variants'],'btn'=>'EXPLORE SHAMPOO','link'=>'/products?cat=Shampoo+%26+Conditioner','img'=>'slide-shampoo.png'],
     ['tag'=>'BABY CARE','title'=>'BABY &<br>KIDS','lines'=>['Baby Lotion · Baby Cream · Baby Shampoo','Body Wash · Face Wash · Gentle Care'],'btn'=>'EXPLORE BABY RANGE','link'=>'/products?cat=Baby+%26+Kids','img'=>'slide-kids.png'],
   ];
