@@ -8,7 +8,7 @@
 <title><?= $pageTitle ?? 'ACM Asia Cosmetics & Manufactures' ?></title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
-<link rel="stylesheet" href="/assets/style.css?v=13">
+<link rel="stylesheet" href="/assets/style.css?v=14">
 </head>
 <body>
 
@@ -41,6 +41,9 @@
           <a href="/products?cat=Lotions">Lotions</a>
           <a href="/products?cat=Shampoo+%26+Conditioner">Shampoo & Conditioner</a>
           <a href="/products?cat=Baby+%26+Kids">Baby & Kids</a>
+          <a href="/products?cat=Hair+Care">Hair Care</a>
+          <a href="/products?cat=Essential+Oils">Essential Oils</a>
+          <a href="/products?cat=Facial">Facial</a>
         </div>
       </div>
       <a href="/contact#faqs">FAQs</a>

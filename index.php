@@ -100,8 +100,9 @@ require_once __DIR__ . '/includes/header.php';
         ['variants'=>'10','tag'=>'MOISTURISING','cat'=>'LOTIONS','desc'=>'Brightening, Niacinamide, Vitamin C, Honey, Cocoa Butter, Aloe Vera & more body lotions.','img'=>'lot-brightening.png','link'=>'/products?cat=Lotions'],
         ['variants'=>'23','tag'=>'HAIR CLEANSING','cat'=>'SHAMPOO & CONDITIONER','desc'=>'Keratin, Deep, Leave-in, Argan, Onion, Color Protect & complete hair range.','img'=>'sh-keratin.png','link'=>'/products?cat=Shampoo+%26+Conditioner'],
         ['variants'=>'8','tag'=>'BABY CARE','cat'=>'BABY & KIDS','desc'=>'Baby Lotion, Cream, Shampoo, Face Wash, Body Wash, Oil & more: gentle care for little ones.','img'=>'kids-baby-lotion.png','link'=>'/products?cat=Baby+%26+Kids'],
-        ['variants'=>'5','tag'=>'HAIR SOLUTIONS','cat'=>'HAIR CARE','desc'=>'Hair Tonic, Hair Serum, Hair Oil, Hair Gel & Hair Cream: complete hair styling & treatment.','img'=>'sh-mens.png','link'=>'/products'],
-        ['variants'=>'13','tag'=>'NATURAL OILS','cat'=>'ESSENTIAL OILS','desc'=>'Coconut, Argan, Jojoba, Neem, Moringa, Kalonji, Amla, Onion & more pure natural oils.','img'=>'lot-aloe-vera.png','link'=>'/products'],
+        ['variants'=>'5','tag'=>'HAIR SOLUTIONS','cat'=>'HAIR CARE','desc'=>'Hair Tonic, Hair Serum, Hair Oil, Hair Gel & Hair Cream: complete hair styling & treatment.','img'=>'sh-mens.png','link'=>'/products?cat=Hair+Care'],
+        ['variants'=>'13','tag'=>'NATURAL OILS','cat'=>'ESSENTIAL OILS','desc'=>'Coconut, Argan, Jojoba, Neem, Moringa, Kalonji, Amla, Onion & more pure natural oils.','img'=>'lot-aloe-vera.png','link'=>'/products?cat=Essential+Oils'],
+        ['variants'=>'6','tag'=>'SKIN CARE','cat'=>'FACIAL','desc'=>'Charcoal Mask, Clay Mask, Brightening Mask, Face Scrub, Face Pack & Face Toner.','img'=>'fw-charcoal.png','link'=>'/products?cat=Facial'],
       ];
       foreach($range as $i => $r): ?>
       <div class="range-card reveal" style="transition-delay:<?= ($i%3)*.12 ?>s" onclick="window.location='<?= $r['link'] ?>'">
