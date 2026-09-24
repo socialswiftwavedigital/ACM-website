@@ -1,8 +1,7 @@
-Options -Indexes
+DirectoryIndex index.php
 
 <Files "config.php">
-  Order Allow,Deny
-  Deny from all
+  Require all denied
 </Files>
 
 php_value session.cookie_httponly 1
