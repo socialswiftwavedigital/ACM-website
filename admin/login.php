@@ -60,12 +60,12 @@ body{font-family:'Poppins',sans-serif;min-height:100vh;display:flex;background:#
 
 /* Left panel */
 .login-left{width:420px;background:#0D2258;display:flex;flex-direction:column;justify-content:center;padding:60px 48px;flex-shrink:0}
-.ll-logo{width:72px;height:72px;object-fit:contain;filter:brightness(0) invert(1);margin-bottom:28px}
+.ll-logo{width:72px;height:72px;object-fit:contain;margin-bottom:28px;background:#fff;border-radius:12px;padding:6px}
 .ll-name{font-size:28px;font-weight:800;color:#fff;margin-bottom:6px}
 .ll-sub{font-size:13px;color:rgba(255,255,255,.55);margin-bottom:32px}
 .ll-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:8px 16px;color:rgba(255,255,255,.7);font-size:12px;font-weight:600}
 .ll-features{margin-top:48px;display:flex;flex-direction:column;gap:14px}
-.ll-feat{display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.55);font-size:12px}
+.ll-feat{display:flex;align-items:center;gap:12px;color:#fff;font-size:12px}
 .ll-feat-dot{width:6px;height:6px;background:#DC2626;border-radius:50%;flex-shrink:0}
 
 /* Right panel */
