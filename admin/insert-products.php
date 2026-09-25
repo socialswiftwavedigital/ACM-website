@@ -6,18 +6,18 @@ $pdo->exec("ALTER TABLE products ADD COLUMN IF NOT EXISTS variants VARCHAR(500) 
 $pdo->exec("DELETE FROM products");
 $pdo->exec("ALTER TABLE products AUTO_INCREMENT = 1");
 
-// Every product has a UNIQUE image matching its exact name
+// Names taken EXACTLY from text printed on each product image
 // [name, category, sku, price, stock, low_stock_threshold, image]
 $products = [
 
-// ── Creams (5 unique) ──────────────────────────────────────────
-['Anti Acne Cream',           'Creams', 'ACM-CR-001',  850, 100, 10, 'ni-cream-anti-acne.png'],
+// ── Creams (5) ────────────────────────────────────────────────
+['Anti-Acne Cream',           'Creams', 'ACM-CR-001',  850, 100, 10, 'ni-cream-anti-acne.png'],
 ['Anti Aging Cream',          'Creams', 'ACM-CR-002', 1100, 100, 10, 'ni-cream-anti-aging.png'],
-['Anti Freckles Cream',       'Creams', 'ACM-CR-003',  900, 100, 10, 'ni-cream-anti-freckles.png'],
-['Vitamin B3 Cream',          'Creams', 'ACM-CR-004',  750, 100, 10, 'ni-cream-vitamin-b3.png'],
+['Anti-Freckles Cream',       'Creams', 'ACM-CR-003',  900, 100, 10, 'ni-cream-anti-freckles.png'],
+['Vitamin B-3 Cream',         'Creams', 'ACM-CR-004',  750, 100, 10, 'ni-cream-vitamin-b3.png'],
 ['Vitamin C Cream',           'Creams', 'ACM-CR-005', 1200, 100, 10, 'ni-cream-vitamin-c.png'],
 
-// ── Serums (8 unique) ──────────────────────────────────────────
+// ── Serums (8) ────────────────────────────────────────────────
 ['Vitamin C Serum',           'Serums', 'ACM-SR-001', 1200, 100, 10, 'ni-serum-vitamin-c.png'],
 ['Hyaluronic Acid Serum',     'Serums', 'ACM-SR-002', 1100, 100, 10, 'ni-serum-hyaluronic.png'],
 ['Vitamin B5 Serum',          'Serums', 'ACM-SR-003', 1400, 100, 10, 'ni-serum-vitamin-b5.png'],
@@ -27,7 +27,7 @@ $products = [
 ['Salicylic Acid Serum',      'Serums', 'ACM-SR-007', 1300, 100, 10, 'ni-serum-salicylic.png'],
 ['Zinc PCA Serum',            'Serums', 'ACM-SR-008', 1600, 100, 10, 'ni-serum-zinc-pca.png'],
 
-// ── Face Wash (10 unique) ──────────────────────────────────────
+// ── Face Wash (14) ────────────────────────────────────────────
 ['Charcoal Face Wash',        'Face Wash', 'ACM-FW-001', 450, 100, 10, 'ni-fw-charcoal.png'],
 ['Brightening Face Wash',     'Face Wash', 'ACM-FW-002', 400, 100, 10, 'ni-fw-brightening.png'],
 ['Foaming Face Wash',         'Face Wash', 'ACM-FW-003', 380, 100, 10, 'ni-fw-foaming.png'],
@@ -38,27 +38,31 @@ $products = [
 ['Vitamin C Face Wash',       'Face Wash', 'ACM-FW-008', 420, 100, 10, 'ni-fw-vitamin-c.png'],
 ['Turmeric Face Wash',        'Face Wash', 'ACM-FW-009', 400, 100, 10, 'ni-fw-turmeric.png'],
 ['Gold Face Wash',            'Face Wash', 'ACM-FW-010', 500, 100, 10, 'ni-fw-gold.png'],
+['Vitamin B-3 Face Wash',     'Face Wash', 'ACM-FW-011', 420, 100, 10, 'ni-fw-vitamin-b3.png'],
+['Rice Face Wash',            'Face Wash', 'ACM-FW-012', 380, 100, 10, 'ni-fw-rice.png'],
+['Pearly Shine Face Wash',    'Face Wash', 'ACM-FW-013', 460, 100, 10, 'ni-fw-pearly-shine.png'],
+['Mens Face Wash',            'Face Wash', 'ACM-FW-014', 440, 100, 10, 'ni-fw-mens.png'],
 
-// ── Petroleum Jelly (3 unique) ────────────────────────────────
+// ── Petroleum Jelly (3) ───────────────────────────────────────
 ['Original Petroleum Jelly',  'Petroleum Jelly', 'ACM-PJ-001', 130, 100, 10, 'ni-pj-original.png'],
 ['Colored Petroleum Jelly',   'Petroleum Jelly', 'ACM-PJ-002', 160, 100, 10, 'ni-pj-colored.png'],
 ['Scented Petroleum Jelly',   'Petroleum Jelly', 'ACM-PJ-003', 180, 100, 10, 'ni-pj-scented.png'],
 
-// ── Lotions (10 unique) ───────────────────────────────────────
+// ── Lotions (10) ──────────────────────────────────────────────
 ['Aloe Vera Lotion',          'Lotions', 'ACM-LT-001', 620, 100, 10, 'ni-lot-aloe-vera.png'],
 ['Brightening Lotion',        'Lotions', 'ACM-LT-002', 750, 100, 10, 'ni-lot-brightening.png'],
 ['Cocoa Butter Lotion',       'Lotions', 'ACM-LT-003', 680, 100, 10, 'ni-lot-coco-butter.png'],
-['Milk & Honey Lotion',       'Lotions', 'ACM-LT-004', 720, 100, 10, 'ni-lot-honey.png'],
+['Honey Lotion',              'Lotions', 'ACM-LT-004', 720, 100, 10, 'ni-lot-honey.png'],
 ['Lavender Lotion',           'Lotions', 'ACM-LT-005', 700, 100, 10, 'ni-lot-lavender.png'],
-['Multi Purpose Lotion',      'Lotions', 'ACM-LT-006', 650, 100, 10, 'ni-lot-multi-purpose.png'],
+['Multi-Purpose Lotion',      'Lotions', 'ACM-LT-006', 650, 100, 10, 'ni-lot-multi-purpose.png'],
 ['Vitamin E Lotion',          'Lotions', 'ACM-LT-007', 600, 100, 10, 'ni-lot-vitamin-e.png'],
 ['Cleansing Lotion',          'Lotions', 'ACM-LT-008', 580, 100, 10, 'ni-lot-cleansing.png'],
 ['Niacinamide Lotion',        'Lotions', 'ACM-LT-009', 780, 100, 10, 'ni-lot-niacinamide.png'],
 ['Vitamin C Lotion',          'Lotions', 'ACM-LT-010', 760, 100, 10, 'ni-lot-vitamin-c.png'],
 
-// ── Shampoo & Conditioner (11 unique) ─────────────────────────
+// ── Shampoo & Conditioner (11) ────────────────────────────────
 ['Keratin Shampoo',           'Shampoo & Conditioner', 'ACM-SH-001', 550, 100, 10, 'ni-sh-keratin.png'],
-['Anti Dandruff Shampoo',     'Shampoo & Conditioner', 'ACM-SH-002', 500, 100, 10, 'ni-sh-anti-dandruff.png'],
+['Anti-Dandruff Shampoo',     'Shampoo & Conditioner', 'ACM-SH-002', 500, 100, 10, 'ni-sh-anti-dandruff.png'],
 ['Onion Shampoo',             'Shampoo & Conditioner', 'ACM-SH-003', 580, 100, 10, 'ni-sh-onion.png'],
 ['Coconut Shampoo',           'Shampoo & Conditioner', 'ACM-SH-004', 480, 100, 10, 'ni-sh-coconut.png'],
 ['Egg Shampoo',               'Shampoo & Conditioner', 'ACM-SH-005', 520, 100, 10, 'ni-sh-egg.png'],
@@ -67,9 +71,9 @@ $products = [
 ['Rice Shampoo',              'Shampoo & Conditioner', 'ACM-SH-008', 480, 100, 10, 'ni-sh-rice.png'],
 ['Herbal Shampoo',            'Shampoo & Conditioner', 'ACM-SH-009', 460, 100, 10, 'ni-sh-herbal.png'],
 ['Mens Shampoo',              'Shampoo & Conditioner', 'ACM-SH-010', 500, 100, 10, 'ni-sh-mens.png'],
-['Sulfate Free Shampoo',      'Shampoo & Conditioner', 'ACM-SH-011', 620, 100, 10, 'ni-sh-sulfate-free.png'],
+['Sulfate-Free Shampoo',      'Shampoo & Conditioner', 'ACM-SH-011', 620, 100, 10, 'ni-sh-sulfate-free.png'],
 
-// ── Baby & Kids (8 unique) ────────────────────────────────────
+// ── Baby & Kids (8) ───────────────────────────────────────────
 ['Baby Lotion',               'Baby & Kids', 'ACM-BK-001', 480, 100, 10, 'ni-bk-lotion.png'],
 ['Baby Oil',                  'Baby & Kids', 'ACM-BK-002', 420, 100, 10, 'ni-bk-oil.png'],
 ['Baby Shampoo',              'Baby & Kids', 'ACM-BK-003', 450, 100, 10, 'ni-bk-shampoo.png'],
@@ -79,14 +83,14 @@ $products = [
 ['Kids Shampoo',              'Baby & Kids', 'ACM-BK-007', 450, 100, 10, 'ni-bk-kids-shampoo.png'],
 ['Baby Petroleum Jelly',      'Baby & Kids', 'ACM-BK-008', 300, 100, 10, 'ni-bk-pjelly.png'],
 
-// ── Hair Care (5 unique) ──────────────────────────────────────
-['Hair Oil 1',                'Hair Care', 'ACM-HC-001', 750, 100, 10, 'ni-hc-1.png'],
-['Hair Oil 2',                'Hair Care', 'ACM-HC-002', 900, 100, 10, 'ni-hc-2.png'],
-['Hair Oil 3',                'Hair Care', 'ACM-HC-003', 680, 100, 10, 'ni-hc-3.png'],
-['Hair Oil 4',                'Hair Care', 'ACM-HC-004', 650, 100, 10, 'ni-hc-4.png'],
-['Hair Oil 5',                'Hair Care', 'ACM-HC-005', 700, 100, 10, 'ni-hc-5.png'],
+// ── Hair Care (5) — names from image labels ────────────────────
+['Argan Hair Oil',            'Hair Care', 'ACM-HC-001', 750, 100, 10, 'ni-hc-1.png'],
+['Hair Cream',                'Hair Care', 'ACM-HC-002', 900, 100, 10, 'ni-hc-2.png'],
+['Hair Gel',                  'Hair Care', 'ACM-HC-003', 680, 100, 10, 'ni-hc-3.png'],
+['Hair Serum',                'Hair Care', 'ACM-HC-004', 650, 100, 10, 'ni-hc-4.png'],
+['Hair Tonic',                'Hair Care', 'ACM-HC-005', 700, 100, 10, 'ni-hc-5.png'],
 
-// ── Essential Oils — no images ────────────────────────────────
+// ── Essential Oils — no images yet ────────────────────────────
 ['Rose Essential Oil',        'Essential Oils', 'ACM-EO-001', 1200, 100, 10, ''],
 ['Lavender Essential Oil',    'Essential Oils', 'ACM-EO-002', 1100, 100, 10, ''],
 ['Tea Tree Essential Oil',    'Essential Oils', 'ACM-EO-003', 1000, 100, 10, ''],
@@ -95,7 +99,7 @@ $products = [
 ['Almond Oil',                'Essential Oils', 'ACM-EO-006',  800, 100, 10, ''],
 ['Jojoba Oil',                'Essential Oils', 'ACM-EO-007', 1050, 100, 10, ''],
 
-// ── Facial — no images ────────────────────────────────────────
+// ── Facial — no images yet ────────────────────────────────────
 ['Facial Scrub',              'Facial', 'ACM-FA-001', 580, 100, 10, ''],
 ['Facial Clay Mask',          'Facial', 'ACM-FA-002', 650, 100, 10, ''],
 ['Facial Toner',              'Facial', 'ACM-FA-003', 520, 100, 10, ''],
@@ -119,10 +123,10 @@ $withoutImg = count(array_filter($products, fn($p) => $p[6] === ''));
 .warn{background:#FEF9C3;color:#854D0E;padding:14px 18px;border-radius:10px;font-size:13px;text-align:left;margin-bottom:18px}
 a{display:inline-block;background:#DC2626;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:600}
 </style></head><body>
-<div class="ok">✓ <?= $count ?> products — every name matched to its image!<br>
+<div class="ok">✓ <?= $count ?> products inserted — names match image labels exactly!<br>
 <small style="font-weight:400;font-size:13px;opacity:.8"><?= $withImg ?> with images · <?= $withoutImg ?> awaiting images</small></div>
 <?php if ($withoutImg > 0): ?>
-<div class="warn">⚠️ <strong>Essential Oils</strong> &amp; <strong>Facial</strong> still need images — send them and I'll add them.</div>
+<div class="warn">⚠️ <strong>Essential Oils</strong> &amp; <strong>Facial</strong> — awaiting images</div>
 <?php endif; ?>
 <a href="/admin/products">→ View Products</a>
 <p style="margin-top:14px;font-size:11px;color:#94a3b8">⚠️ Delete this file after use</p>
