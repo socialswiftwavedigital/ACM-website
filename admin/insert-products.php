@@ -1,6 +1,10 @@
 <?php
 require_once __DIR__ . '/includes/db.php';
 
+// Add image column if not exists
+$pdo->exec("ALTER TABLE products ADD COLUMN IF NOT EXISTS image VARCHAR(200) DEFAULT ''");
+$pdo->exec("ALTER TABLE products ADD COLUMN IF NOT EXISTS variants VARCHAR(500) DEFAULT ''");
+
 $pdo->exec("DELETE FROM products");
 $pdo->exec("ALTER TABLE products AUTO_INCREMENT = 1");
 
