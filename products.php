@@ -72,7 +72,7 @@ require_once __DIR__ . '/includes/header.php';
     <?php else: ?>
     <div class="products-grid" id="productsGrid">
       <?php foreach ($products as $p):
-        $dn = preg_replace('/^ACM\s+/i', '', $p['name']); ?>
+        $dn = $p['name']; ?>
       <div class="product-card" data-cat="<?= htmlspecialchars($p['category']) ?>" onclick="window.location='/product?id=<?= $p['id'] ?>'">
         <div class="product-img">
           <?php if (!empty($p['image'])): ?>
