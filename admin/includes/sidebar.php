@@ -7,7 +7,7 @@ try { $_newOrders = (int)$pdo->query("SELECT COUNT(*) FROM orders WHERE status='
 ?>
 <aside class="sidebar">
   <div class="sidebar-brand">
-    <img src="https://acmpvtltd.com/logo.png" alt="ACM" style="width:36px;height:36px;object-fit:contain;filter:brightness(0) invert(1);flex-shrink:0">
+    <img src="https://acmpvtltd.com/logo.png" alt="ACM" style="width:80px;height:37px;object-fit:contain;border-radius:6px;flex-shrink:0">
     <div>
       <div class="brand-name">ACM Admin</div>
       <div class="brand-sub">Asia Cosmetics</div>

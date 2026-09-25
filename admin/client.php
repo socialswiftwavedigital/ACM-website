@@ -55,7 +55,7 @@ if (!isset($_SESSION['acm_client'])) {
 body{font-family:'Poppins',sans-serif;background:#f0f2f8;display:flex;align-items:center;justify-content:center;min-height:100vh}
 .login-card{background:#fff;border-radius:16px;padding:48px 40px;width:380px;max-width:94vw;box-shadow:0 8px 40px rgba(13,34,88,.12)}
 .login-logo{display:flex;align-items:center;gap:14px;justify-content:center;margin-bottom:32px}
-.login-logo img{width:48px;height:48px;object-fit:contain}
+.login-logo img{width:120px;height:56px;object-fit:contain;border-radius:8px}
 .login-logo-text{font-size:18px;font-weight:700;color:#0D2258}
 .login-logo-sub{font-size:11px;color:#64748b;font-weight:500}
 h2{font-size:20px;font-weight:600;color:#0D2258;text-align:center;margin-bottom:6px}
