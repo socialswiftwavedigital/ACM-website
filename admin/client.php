@@ -38,13 +38,13 @@ if (!isset($_SESSION['acm_client'])) {
             $_SESSION['client_last_activity'] = time();
             header('Location: /admin/client'); exit;
         } else {
-            $loginError = 'Password غلط ہے۔ دوبارہ کوشش کریں۔';
+            $loginError = 'Incorrect password. Please try again.';
         }
     }
     // Show login page
     ?>
 <!doctype html>
-<html lang="ur" dir="ltr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -78,12 +78,12 @@ button[type=submit]:hover{background:#16337a}
     </div>
   </div>
   <h2>Client Portal</h2>
-  <p class="login-sub">Apna password enter karein apka dashboard dekhne ke liye</p>
+  <p class="login-sub">Enter your password to access the dashboard</p>
   <form method="post">
     <label>Password</label>
     <input type="password" name="pass" placeholder="••••••••" autofocus required>
     <?php if ($loginError): ?><div class="error"><?= htmlspecialchars($loginError) ?></div><?php endif; ?>
-    <button type="submit">Dashboard Kholein →</button>
+    <button type="submit">Open Dashboard →</button>
   </form>
 </div>
 </body>
@@ -154,7 +154,7 @@ $products = $pdo->query("SELECT name, category, stock, low_stock_threshold FROM 
 $allOrders = $pdo->query("SELECT * FROM orders ORDER BY created_at DESC")->fetchAll();
 ?>
 <!doctype html>
-<html lang="ur" dir="ltr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -172,7 +172,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);min
 /* ── Top nav ───────────────────────────────────────────── */
 .topnav{background:var(--navy);padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.2)}
 .nav-left{display:flex;align-items:center;gap:14px}
-.nav-left img{width:34px;height:34px;object-fit:contain;filter:brightness(0) invert(1)}
+.nav-left img{object-fit:contain;border-radius:4px}
 .nav-brand{color:#fff;font-weight:700;font-size:15px}
 .nav-brand-sub{color:rgba(255,255,255,.5);font-size:10px;font-weight:500}
 .badge-readonly{background:rgba(220,38,38,.15);border:1px solid rgba(220,38,38,.5);color:#f87171;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.5px}
@@ -270,7 +270,7 @@ tr:hover td{background:#f8fafc}
 <!-- ── Top Nav ─────────────────────────────────────────────── -->
 <nav class="topnav">
   <div class="nav-left">
-    <img src="https://acmpvtltd.com/logo.png" alt="ACM">
+    <img src="https://acmpvtltd.com/logo.png" alt="ACM" style="width:70px;height:32px;object-fit:contain;border-radius:4px">
     <div>
       <div class="nav-brand">ACM Client Portal</div>
       <div class="nav-brand-sub">Asia Cosmetics Manufacturing</div>
@@ -308,7 +308,7 @@ tr:hover td{background:#f8fafc}
     </div>
     <?php if ($newOrders > 0 || $processingOrd > 0): ?>
     <div class="hero-pending">
-      🔔 <strong><?= $newOrders ?></strong> naye orders pending &nbsp;·&nbsp; <strong><?= $processingOrd ?></strong> production mein hain
+      🔔 <strong><?= $newOrders ?></strong> new orders pending &nbsp;·&nbsp; <strong><?= $processingOrd ?></strong> in production
     </div>
     <?php endif; ?>
   </div>
@@ -316,7 +316,7 @@ tr:hover td{background:#f8fafc}
 
 <!-- ── Info note ─────────────────────────────────────────────── -->
 <div class="info-note">
-  ℹ️ Aap sirf <strong>status</strong> aur <strong>tracking number</strong> update kar sakte hain — baqi tamam fields read only hain.
+  ℹ️ You can only update <strong>status</strong> and <strong>tracking number</strong> — all other fields are read only.
 </div>
 
 <div class="wrap">
@@ -386,7 +386,7 @@ tr:hover td{background:#f8fafc}
           <thead><tr><th>Order #</th><th>Customer</th><th>Amount</th><th>Status</th></tr></thead>
           <tbody>
           <?php if (empty($recentOrders)): ?>
-            <tr><td colspan="4" style="text-align:center;color:var(--muted);padding:30px">Koi orders nahi hain abhi.</td></tr>
+            <tr><td colspan="4" style="text-align:center;color:var(--muted);padding:30px">No orders yet.</td></tr>
           <?php else: foreach ($recentOrders as $o): ?>
             <tr>
               <td style="font-weight:600;font-size:12px"><?= htmlspecialchars($o['order_number']) ?></td>
@@ -407,7 +407,7 @@ tr:hover td{background:#f8fafc}
       </div>
       <div class="card-body" style="padding:0">
         <?php if (empty($products)): ?>
-          <p style="padding:20px;color:var(--muted);font-size:13px">Products nahi hain.</p>
+          <p style="padding:20px;color:var(--muted);font-size:13px">No products found.</p>
         <?php else: ?>
         <div style="max-height:300px;overflow-y:auto">
           <?php foreach ($products as $p):
@@ -434,7 +434,7 @@ tr:hover td{background:#f8fafc}
   <!-- ── All Orders Table ────────────────────────────────────── -->
   <div class="card">
     <div class="card-header">
-      <div class="card-title">Tamam Orders</div>
+      <div class="card-title">All Orders</div>
       <span style="font-size:11px;color:var(--muted)"><?= count($allOrders) ?> orders total</span>
     </div>
     <div class="table-wrap">
@@ -452,7 +452,7 @@ tr:hover td{background:#f8fafc}
         </thead>
         <tbody>
         <?php if (empty($allOrders)): ?>
-          <tr><td colspan="7" style="text-align:center;color:var(--muted);padding:40px">Koi orders nahi hain abhi.</td></tr>
+          <tr><td colspan="7" style="text-align:center;color:var(--muted);padding:40px">No orders yet.</td></tr>
         <?php else: foreach ($allOrders as $o): ?>
           <tr>
             <td style="font-weight:600;white-space:nowrap"><?= htmlspecialchars($o['order_number']) ?></td>
@@ -491,10 +491,10 @@ tr:hover td{background:#f8fafc}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script>
 var _periods = {
-  'today': {labels:<?= json_encode($chartToday['labels']) ?>, data:<?= json_encode($chartToday['data']) ?>, label:'Aaj'},
-  '7':     {labels:<?= json_encode($chart7['labels'])     ?>, data:<?= json_encode($chart7['data'])     ?>, label:'Aakhri 7 Din'},
-  '14':    {labels:<?= json_encode($chart14['labels'])    ?>, data:<?= json_encode($chart14['data'])    ?>, label:'Aakhri 14 Din'},
-  '30':    {labels:<?= json_encode($chart30['labels'])    ?>, data:<?= json_encode($chart30['data'])    ?>, label:'Aakhri 30 Din'},
+  'today': {labels:<?= json_encode($chartToday['labels']) ?>, data:<?= json_encode($chartToday['data']) ?>, label:'Today'},
+  '7':     {labels:<?= json_encode($chart7['labels'])     ?>, data:<?= json_encode($chart7['data'])     ?>, label:'Last 7 Days'},
+  '14':    {labels:<?= json_encode($chart14['labels'])    ?>, data:<?= json_encode($chart14['data'])    ?>, label:'Last 14 Days'},
+  '30':    {labels:<?= json_encode($chart30['labels'])    ?>, data:<?= json_encode($chart30['data'])    ?>, label:'Last 30 Days'},
 };
 var _chart = new Chart(document.getElementById('revenueChart'), {
   type: 'bar',

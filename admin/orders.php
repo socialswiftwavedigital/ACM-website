@@ -175,8 +175,8 @@ include __DIR__ . '/includes/header.php';
             $nm      = clean($o['customer_name'] ?? '');
             $qn      = clean($o['order_number'] ?? '');
             $pr      = clean($prod);
-            $waConfirm  = $wa ? 'https://wa.me/'.$wa.'?text='.urlencode("Assalam o Alaikum $nm! ✅ Aapka quote request *$qn* for *$pr* ({$qty} pcs) receive ho gaya hai. Hum 24 ghante mein pricing bhejenge. — ACM Asia Cosmetics") : '';
-            $waProd     = $wa ? 'https://wa.me/'.$wa.'?text='.urlencode("Assalam o Alaikum $nm! ⚙️ Aapka order *$qn* (*$pr*, {$qty} pcs) production mein hai. Completion ke baad aapko update karenge. — ACM Asia Cosmetics") : '';
+            $waConfirm  = $wa ? 'https://wa.me/'.$wa.'?text='.urlencode("Hello $nm! ✅ Your quote request *$qn* for *$pr* ({$qty} pcs) has been received. We will send you pricing within 24 hours. — ACM Asia Cosmetics") : '';
+            $waProd     = $wa ? 'https://wa.me/'.$wa.'?text='.urlencode("Hello $nm! ⚙️ Your order *$qn* (*$pr*, {$qty} pcs) is now in production. We will update you once it is completed. — ACM Asia Cosmetics") : '';
             $waShip     = $wa ? 'https://wa.me/'.$wa.'?text='.urlencode("Assalam o Alaikum $nm! 🚚 Aapka order *$qn* dispatch ho gaya hai. Tracking: ".clean($o['tracking_number'] ?? 'Coming soon')." — ACM Asia Cosmetics") : '';
             $waDone     = $wa ? 'https://wa.me/'.$wa.'?text='.urlencode("Assalam o Alaikum $nm! ✅ Aapka order *$qn* deliver ho gaya. Feedback zaroor dein! — ACM Asia Cosmetics") : '';
           ?>
