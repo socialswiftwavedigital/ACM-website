@@ -320,16 +320,37 @@ if ($d['banner']):
 </section>
 
 <!-- ── CTA ───────────────────────────────────────────────── -->
-<section style="background:var(--navy);padding:60px 0;text-align:center">
+<section class="cat-cta-section">
   <div class="container">
-    <h2 style="color:#fff;font-size:28px;font-weight:800;margin-bottom:10px">Ready to Order <?= htmlspecialchars($cat) ?>?</h2>
-    <p style="color:rgba(255,255,255,.65);margin-bottom:28px;font-size:15px">Contact us on WhatsApp for pricing, samples, and private label options.</p>
-    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <a href="https://wa.me/923255129241?text=<?= urlencode('Hi, I want to order ' . $cat . ' (private label)') ?>" target="_blank" class="btn btn-whatsapp btn-lg">💬 WhatsApp Now</a>
-      <a href="/order" class="btn btn-lg" style="background:#fff;color:var(--navy);font-weight:800">Get A Quote →</a>
+    <div class="cat-cta-inner">
+      <div class="cat-cta-tag">GET STARTED</div>
+      <h2 class="cat-cta-title">Ready to Order <span><?= htmlspecialchars($cat) ?>?</span></h2>
+      <p class="cat-cta-sub">Contact us on WhatsApp for pricing, samples, and private label options.</p>
+      <div class="cat-cta-btns">
+        <a href="https://wa.me/923255129241?text=<?= urlencode('Hi, I want to order ' . $cat . ' (private label)') ?>" target="_blank" class="cat-cta-wa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.104.549 4.076 1.508 5.793L0 24l6.399-1.489A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.5-5.2-1.373l-.374-.22-3.8.885.928-3.694-.243-.38A9.946 9.946 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp Now
+        </a>
+        <a href="/order" class="cat-cta-quote">Get A Quote →</a>
+      </div>
     </div>
   </div>
 </section>
+<style>
+.cat-cta-section { background: linear-gradient(135deg, #091B47 0%, #0D2258 60%, #1a1060 100%); padding: 80px 0; position: relative; overflow: hidden; }
+.cat-cta-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--red), #ff6b6b, var(--red)); }
+.cat-cta-section::after { content: ''; position: absolute; bottom: -60px; right: -60px; width: 280px; height: 280px; border-radius: 50%; background: rgba(220,38,38,.06); pointer-events: none; }
+.cat-cta-inner { text-align: center; position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
+.cat-cta-tag { font-size: 11px; font-weight: 800; letter-spacing: 3px; color: var(--red); text-transform: uppercase; margin-bottom: 16px; }
+.cat-cta-title { font-size: clamp(26px,4vw,40px); font-weight: 900; color: #fff; line-height: 1.15; margin-bottom: 14px; }
+.cat-cta-title span { color: var(--red); }
+.cat-cta-sub { font-size: 15px; color: rgba(255,255,255,.7); margin-bottom: 36px; line-height: 1.6; }
+.cat-cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cat-cta-wa { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: #fff; font-family: 'Poppins',sans-serif; font-size: 15px; font-weight: 700; padding: 15px 32px; border-radius: 8px; transition: background .2s, box-shadow .2s; box-shadow: 0 4px 20px rgba(37,211,102,.35); }
+.cat-cta-wa:hover { background: #1ebe5a; box-shadow: 0 8px 28px rgba(37,211,102,.5); }
+.cat-cta-quote { display: inline-flex; align-items: center; background: var(--red); color: #fff; font-family: 'Poppins',sans-serif; font-size: 15px; font-weight: 700; padding: 15px 32px; border-radius: 8px; transition: background .2s, box-shadow .2s; box-shadow: 0 4px 20px rgba(220,38,38,.3); }
+.cat-cta-quote:hover { background: var(--red2); box-shadow: 0 8px 28px rgba(220,38,38,.45); }
+</style>
 
 <style>
 /* ── HERO ─────────────────────────────────────────────── */

@@ -151,26 +151,26 @@ img { max-width: 100%; display: block; }
 .footer-top { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1.2fr; gap: 56px; padding: 64px 0 56px; }
 .footer-brand { }
 .footer-logo { height: 52px; margin-bottom: 18px; }
-.footer-brand p { font-size: 13.5px; color: rgba(255,255,255,.45); line-height: 1.8; max-width: 260px; margin-bottom: 24px; }
+.footer-brand p { font-size: 13.5px; color: rgba(255,255,255,.82); line-height: 1.8; max-width: 260px; margin-bottom: 24px; }
 .btn-wa-footer { display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: #fff; font-family: 'Poppins',sans-serif; font-size: 13px; font-weight: 700; padding: 11px 20px; border-radius: 50px; transition: background .2s, box-shadow .2s; box-shadow: 0 4px 14px rgba(37,211,102,.3); }
 .btn-wa-footer:hover { background: #1ebe5a; box-shadow: 0 6px 20px rgba(37,211,102,.45); }
-.footer-col-title { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; color: rgba(255,255,255,.35); text-transform: uppercase; margin-bottom: 20px; }
+.footer-col-title { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; color: rgba(255,255,255,.7); text-transform: uppercase; margin-bottom: 20px; }
 .footer-nav { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.footer-nav a { font-size: 14px; color: rgba(255,255,255,.6); transition: color .2s, padding-left .2s; display: block; }
+.footer-nav a { font-size: 14px; color: rgba(255,255,255,.85); transition: color .2s, padding-left .2s; display: block; }
 .footer-nav a:hover { color: #fff; padding-left: 4px; }
 .footer-contact-list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 22px; }
-.footer-contact-list li { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: rgba(255,255,255,.6); }
+.footer-contact-list li { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: rgba(255,255,255,.85); }
 .footer-contact-list li svg { flex-shrink: 0; color: rgba(220,38,38,.8); }
-.footer-contact-list a { color: rgba(255,255,255,.6); transition: color .2s; }
+.footer-contact-list a { color: rgba(255,255,255,.85); transition: color .2s; }
 .footer-contact-list a:hover { color: #fff; }
 .btn-quote-footer { display: inline-flex; align-items: center; background: var(--red); color: #fff; font-family: 'Poppins',sans-serif; font-size: 13px; font-weight: 700; padding: 10px 20px; border-radius: 6px; letter-spacing: .5px; transition: background .2s; }
 .btn-quote-footer:hover { background: var(--red2); }
 .footer-divider { border: none; border-top: 1px solid rgba(255,255,255,.08); }
 .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; gap: 12px; }
-.footer-bottom span { font-size: 13px; color: rgba(255,255,255,.3); }
+.footer-bottom span { font-size: 13px; color: rgba(255,255,255,.65); }
 .footer-bottom-links { display: flex; gap: 24px; }
-.footer-bottom-links a { font-size: 13px; color: rgba(255,255,255,.3); transition: color .2s; }
-.footer-bottom-links a:hover { color: rgba(255,255,255,.6); }
+.footer-bottom-links a { font-size: 13px; color: rgba(255,255,255,.65); transition: color .2s; }
+.footer-bottom-links a:hover { color: #fff; }
 
 /* ── WhatsApp Float ── */
 .wa-float { position: fixed; bottom: 28px; right: 28px; background: #25D366; color: #fff; width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,.4); z-index: 500; transition: transform .2s; }
