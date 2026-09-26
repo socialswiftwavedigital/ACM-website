@@ -30,7 +30,7 @@ img { max-width: 100%; display: block; }
 /* ── Header ── */
 .site-header { background: var(--navy); position: sticky; top: 0; z-index: 200; border-bottom: 1px solid rgba(255,255,255,.08); }
 .hdr-inner { max-width: 1400px; margin: 0 auto; padding: 0 32px; height: 68px; display: flex; align-items: center; gap: 40px; }
-.hdr-logo img { height: 48px; width: auto; }
+.hdr-logo img { height: 48px; width: auto; max-width: 130px; object-fit: contain; object-position: left center; }
 .logo-text { font-size: 24px; font-weight: 800; color: #fff; }
 .hdr-nav { display: flex; align-items: center; gap: 6px; margin-left: auto; }
 .hdr-nav > a, .nav-dropdown > a { font-size: 13px; font-weight: 600; letter-spacing: .5px; color: rgba(255,255,255,.75); padding: 8px 14px; transition: color .2s; text-transform: uppercase; }
