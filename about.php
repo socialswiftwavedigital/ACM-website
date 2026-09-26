@@ -25,7 +25,7 @@ require_once __DIR__ . '/includes/header.php';
       <p>Our products are manufactured under strict quality control standards using carefully selected ingredients that are safe, effective, and suitable for all skin types.</p>
       <div class="about-stats">
         <div>
-          <div class="astat-num">70+</div>
+          <div class="astat-num">90+</div>
           <div class="astat-label">Products</div>
         </div>
         <div>
@@ -37,7 +37,7 @@ require_once __DIR__ . '/includes/header.php';
           <div class="astat-label">Customers</div>
         </div>
         <div>
-          <div class="astat-num">5+</div>
+          <div class="astat-num">10+</div>
           <div class="astat-label">Years</div>
         </div>
       </div>
@@ -139,7 +139,7 @@ require_once __DIR__ . '/includes/header.php';
 <section class="cta-section">
   <div class="cta-wrap">
     <h2>Start Your<br><span>Skincare Journey</span></h2>
-    <p>Explore our full range of 70+ products across 10 categories — or get in touch for private label solutions.</p>
+    <p>Explore our full range of 90+ products across 10 categories — or get in touch for private label solutions.</p>
     <div class="cta-btns">
       <a href="/products" class="btn-cta-primary">Browse Products →</a>
       <a href="https://wa.me/923255129241" class="btn-cta-outline" target="_blank">💬 WhatsApp Us</a>
