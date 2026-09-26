@@ -18,6 +18,9 @@ require_once __DIR__ . '/includes/header.php';
     ['tag'=>'MOISTURISING','title'=>'LOTIONS','lines'=>['Brightening · Niacinamide · Vitamin C','Honey · Aloe Vera · 10 Variants'],'btn'=>'EXPLORE LOTIONS','link'=>'/lotions','img'=>'slide-lotions-v2.png'],
     ['tag'=>'HAIR CARE','title'=>'SHAMPOO<br>& CONDITIONER','lines'=>['Keratin · Anti-Dandruff · Amla','Anti-Lice · Conditioner · 15 Variants'],'btn'=>'EXPLORE SHAMPOO','link'=>'/shampoo-conditioner','img'=>'slide-shampoo.png'],
     ['tag'=>'BABY CARE','title'=>'BABY &<br>KIDS','lines'=>['Baby Lotion · Baby Cream · Baby Shampoo','Body Wash · Face Wash · Gentle Care'],'btn'=>'EXPLORE BABY RANGE','link'=>'/baby-kids','img'=>'slide-kids.png'],
+    ['tag'=>'HAIR SOLUTIONS','title'=>'HAIR<br>CARE','lines'=>['Hair Tonic · Hair Serum · Hair Oil','Hair Gel · Hair Cream · 5 Variants'],'btn'=>'EXPLORE HAIR CARE','link'=>'/hair-care','img'=>'slide-shampoo.png'],
+    ['tag'=>'NATURAL OILS','title'=>'ESSENTIAL<br>OILS','lines'=>['Coconut · Argan · Jojoba · Neem','Moringa · Kalonji · Amla · Onion'],'btn'=>'EXPLORE ESSENTIAL OILS','link'=>'/essential-oils','img'=>'slide-lotions-v2.png'],
+    ['tag'=>'SKIN TREATMENTS','title'=>'FACIAL','lines'=>['Charcoal Mask · Clay Mask · Face Scrub','Brightening Mask · Face Pack · Face Toner'],'btn'=>'EXPLORE FACIAL','link'=>'/facial','img'=>'slide-facewash.png'],
   ];
   foreach ($slides as $i => $s): ?>
   <div class="slide <?= $i===0?'active':'' ?>" data-index="<?= $i ?>" style="background-image:url('/images/<?= $s['img'] ?>')">

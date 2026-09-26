@@ -21,8 +21,8 @@
           <li><a href="/">Home</a></li>
           <li><a href="/about">About Us</a></li>
           <li><a href="/products">All Products</a></li>
-          <li><a href="/order">Get A Quote</a></li>
-          <li><a href="/contact#faqs">FAQs</a></li>
+          <li><a href="javascript:void(0)" onclick="openQuoteModal()">Get A Quote</a></li>
+          <li><a href="/faqs">FAQs</a></li>
           <li><a href="/contact">Contact Us</a></li>
         </ul>
       </div>
@@ -31,13 +31,16 @@
       <div class="footer-col">
         <h4 class="footer-col-title">Our Products</h4>
         <ul class="footer-nav">
-          <li><a href="/products?cat=Creams">Creams</a></li>
-          <li><a href="/products?cat=Serums">Serums</a></li>
-          <li><a href="/products?cat=Face+Wash">Face Wash</a></li>
-          <li><a href="/products?cat=Petroleum+Jelly">Petroleum Jelly</a></li>
-          <li><a href="/products?cat=Lotions">Lotions</a></li>
-          <li><a href="/products?cat=Shampoo+%26+Conditioner">Shampoo</a></li>
-          <li><a href="/products?cat=Baby+%26+Kids">Baby &amp; Kids</a></li>
+          <li><a href="/creams">Creams</a></li>
+          <li><a href="/serums">Serums</a></li>
+          <li><a href="/face-wash">Face Wash</a></li>
+          <li><a href="/petroleum-jelly">Petroleum Jelly</a></li>
+          <li><a href="/lotions">Lotions</a></li>
+          <li><a href="/shampoo-conditioner">Shampoo &amp; Conditioner</a></li>
+          <li><a href="/baby-kids">Baby &amp; Kids</a></li>
+          <li><a href="/hair-care">Hair Care</a></li>
+          <li><a href="/essential-oils">Essential Oils</a></li>
+          <li><a href="/facial">Facial</a></li>
         </ul>
       </div>
 
@@ -62,7 +65,7 @@
             <span>Lahore, Pakistan</span>
           </li>
         </ul>
-        <a href="/order" class="btn-quote-footer">Get A Quote →</a>
+        <a href="javascript:void(0)" onclick="openQuoteModal()" class="btn-quote-footer">Get A Quote →</a>
       </div>
     </div>
 
