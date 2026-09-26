@@ -23,8 +23,8 @@
 <!-- Header -->
 <header class="site-header" id="site-header">
   <div class="hdr-inner">
-    <a href="/" class="hdr-logo">
-      <img src="/logo.png" alt="ACM" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <a href="/" class="hdr-logo" style="display:block;width:56px;height:48px;overflow:hidden;flex-shrink:0">
+      <img src="/logo.png" alt="ACM" style="height:48px;width:auto;display:block" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
       <span class="logo-text" style="display:none">ACM</span>
     </a>
 
