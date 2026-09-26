@@ -297,8 +297,7 @@ require_once __DIR__ . '/includes/header.php';
 .faq-btn-quote:hover { background:var(--red2); }
 
 /* ── Modal ─────────────────────────────────── */
-.qm-overlay { display:none; position:fixed; inset:0; background:rgba(9,27,71,.7); backdrop-filter:blur(4px); z-index:1000; align-items:center; justify-content:center; padding:20px; }
-.qm-overlay.open { display:flex; }
+.qm-overlay { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(9,27,71,.72); z-index:9999; align-items:center; justify-content:center; padding:20px; }
 .qm-box { background:#fff; border-radius:20px; width:100%; max-width:580px; max-height:90vh; overflow-y:auto; position:relative; box-shadow:0 24px 64px rgba(0,0,0,.3); }
 .qm-close { position:absolute; top:16px; right:18px; background:rgba(13,34,88,.08); border:none; width:34px; height:34px; border-radius:50%; font-size:16px; cursor:pointer; color:var(--navy); z-index:10; transition:background .15s; display:flex; align-items:center; justify-content:center; }
 .qm-close:hover { background:rgba(13,34,88,.16); }
@@ -338,11 +337,13 @@ require_once __DIR__ . '/includes/header.php';
 
 <script>
 function openQuoteModal() {
-  document.getElementById('quoteModal').classList.add('open');
+  var m = document.getElementById('quoteModal');
+  m.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 }
 function closeQuoteModal() {
-  document.getElementById('quoteModal').classList.remove('open');
+  var m = document.getElementById('quoteModal');
+  m.style.display = 'none';
   document.body.style.overflow = '';
 }
 document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeQuoteModal(); });
